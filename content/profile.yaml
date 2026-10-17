@@ -1,0 +1,187 @@
+heroTitle:
+  en: I ship React and React Native products people
+  ar: أبني منتجات React و React Native
+heroAccent:
+  en: actually download.
+  ar: يحمّلها الناس فعلًا.
+heroDescription:
+  en: Senior frontend and mobile developer. Five years of production work for EU teams and Arabic-market clients — from TypeScript migrations to apps live on the App Store and Google Play.
+  ar: مطور واجهات وتطبيقات موبايل أول. خمس سنوات من العمل الإنتاجي لفرق أوروبية وعملاء في السوق العربي — من التحويل إلى TypeScript حتى تطبيقات منشورة على App Store و Google Play.
+shipLog:
+  - when: "2025"
+    what:
+      en: LeaseTeq AG · Switzerland
+      ar: LeaseTeq AG · سويسرا
+    detail:
+      en: Next.js features, Tailwind UI, priority fixes
+      ar: ميزات Next.js، واجهات Tailwind، إصلاحات عاجلة
+  - when: "2023"
+    what:
+      en: Ruh · App stores
+      ar: Ruh · المتاجر
+    detail:
+      en: Stripe Apple Pay + Google Pay, in-app purchases
+      ar: Apple Pay و Google Pay عبر Stripe، مشتريات داخل التطبيق
+  - when: "2022"
+    what:
+      en: Casting Arabia · 3 platforms
+      ar: Casting Arabia · 3 منصات
+    detail:
+      en: JS → TypeScript, Next.js on AWS Amplify
+      ar: من JS إلى TypeScript، و Next.js على AWS Amplify
+  - when: 2019–22
+    what:
+      en: Client store apps
+      ar: تطبيقات عملاء على المتاجر
+    detail:
+      en: Plutoo, Seetah, Luna-TV, Al Obaidi Brothers
+      ar: Plutoo و Seetah و Luna-TV و Al Obaidi Brothers
+shipLogSummary:
+  en: 7+ store apps · web + iOS + Android
+  ar: أكثر من 7 تطبيقات · الويب + iOS + Android
+clients:
+  - LeaseTeq AG
+  - Ruh Corp
+  - Casting Arabia
+  - Unit One Group
+  - Gaza Goes Global
+  - Web Com Technology
+  - Dits
+metrics:
+  - value: 5+
+    label:
+      en: Years shipping React products
+      ar: سنوات في تسليم منتجات React
+  - value: 7+
+    label:
+      en: Apps on App Store and Google Play
+      ar: تطبيقات على المتجرين
+  - value: "3"
+    label:
+      en: "Platforms: web, iOS, Android"
+      ar: "منصات: الويب و iOS و Android"
+  - value: EN / AR
+    label:
+      en: Delivery languages
+      ar: لغات التسليم
+aboutTitle:
+  en: A product engineer who cares about the release, not just the commit.
+  ar: مهندس منتجات يهتم بالإصدار، لا بالكود فقط.
+aboutBody:
+  en: Computer Science graduate from Al-Azhar University, Gaza. For five years I have shipped React and React Native products for European teams and Arabic-market clients, working in English and Arabic. I mentored students at the Gaza Sky Geeks coding academy in 2017–2018.
+  ar: خريج علوم حاسوب من جامعة الأزهر في غزة. خلال خمس سنوات سلّمت منتجات React و React Native لفرق أوروبية وعملاء في السوق العربي، بالعربية والإنجليزية. وأرشدت الطلاب في أكاديمية البرمجة في Gaza Sky Geeks خلال 2017–2018.
+tools:
+  - React
+  - Next.js
+  - React Native
+  - TypeScript
+  - Redux
+  - Tailwind CSS
+  - Stripe
+  - Firebase
+  - AWS Amplify
+  - Material-UI
+skillGroups:
+  - category: Frontend
+    tags:
+      - React.js
+      - Next.js
+      - TypeScript
+      - Redux (Saga, Thunk)
+      - MobX-state-tree
+      - Material-UI
+      - Tailwind CSS
+      - HTML5
+      - CSS3
+  - category: Mobile
+    tags:
+      - React Native
+      - iOS and Android deployment
+      - App Store Connect
+      - Google Play Console
+      - Firebase Cloud Messaging
+      - OneSignal
+      - In-app purchases
+  - category: Backend
+    tags:
+      - Node.js
+      - Feathers.js
+      - REST APIs
+      - Socket.IO
+      - Laravel and Django API integration
+  - category: Databases
+    tags:
+      - PostgreSQL
+      - MongoDB
+      - Firebase Realtime Database
+  - category: Cloud & DevOps
+    tags:
+      - AWS Amplify
+      - Firebase Cloud Storage
+      - GitHub Actions
+      - Git
+      - GitLab
+      - Bitbucket
+  - category: Tools & Libraries
+    tags:
+      - Stripe API
+      - Google Maps API
+      - Google Analytics
+      - Jira
+  - category: AI-assisted development
+    tags:
+      - GitHub Copilot
+      - Cursor
+      - Claude
+      - ChatGPT
+  - category: Practices
+    tags:
+      - Agile development
+      - Unit testing
+      - Debugging
+      - Performance optimization
+education:
+  degree:
+    en: Bachelor of Computer Science
+    ar: بكالوريوس علوم الحاسوب
+  school:
+    en: Al-Azhar University, Gaza
+    ar: جامعة الأزهر، غزة
+  graduation: "2026"
+training:
+  - title:
+      en: Full-Time Training Program on Full-Stack JavaScript Web Development
+      ar: برنامج تدريبي بدوام كامل في تطوير الويب المتكامل بـ JavaScript
+    organization:
+      en: Gaza Sky Geeks · Founders and Coders, London
+      ar: Gaza Sky Geeks · Founders and Coders، لندن
+    dates:
+      en: Nov 2017 – Apr 2018
+      ar: نوفمبر 2017 – أبريل 2018
+  - title:
+      en: Freelance and Social Media Marketing
+      ar: العمل الحر والتسويق عبر وسائل التواصل الاجتماعي
+    organization:
+      en: Gaza Sky Geeks, Gaza
+      ar: Gaza Sky Geeks، غزة
+    dates:
+      en: May 2018 – Jul 2018
+      ar: مايو 2018 – يوليو 2018
+  - title:
+      en: Competency-Based Training on Web Applications Development
+      ar: تدريب قائم على الكفاءات في تطوير تطبيقات الويب
+    organization:
+      en: Center of Competence in IT Sector, Gaza
+      ar: مركز الكفاءات في قطاع تكنولوجيا المعلومات، غزة
+    dates:
+      en: Nov 2016 – Dec 2016
+      ar: نوفمبر 2016 – ديسمبر 2016
+  - title:
+      en: Professional Ethical Hacker
+      ar: الاختراق الأخلاقي الاحترافي
+    organization:
+      en: Guidance Co. for Consultations & Training, Gaza
+      ar: شركة Guidance للاستشارات والتدريب، غزة
+    dates:
+      en: Aug 2016 – Oct 2016
+      ar: أغسطس 2016 – أكتوبر 2016

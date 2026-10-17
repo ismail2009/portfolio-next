@@ -1,0 +1,20 @@
+company: LeaseTeq AG
+companyAr: ""
+role:
+  en: Full Stack JavaScript Developer
+  ar: مطور Full Stack JavaScript
+type:
+  en: Contract · Switzerland
+  ar: عقد · سويسرا
+start: 2025-07-01
+end: 2025-08-01
+outcome:
+  en: "Short contract on a live Next.js product: built front-end and back-end features, responsive Tailwind CSS components and high-priority fixes, using an AI-assisted workflow (Cursor) to ship faster."
+  ar: "عقد قصير على منتج Next.js يعمل: بنيت ميزات للواجهة والخادم، ومكونات متجاوبة بـ Tailwind CSS، وإصلاحات عالية الأولوية، مع سير عمل مدعوم بالذكاء الاصطناعي (Cursor) لتسريع التسليم."
+tags:
+  - Next.js
+  - React
+  - Tailwind CSS
+  - Full stack
+  - AI-assisted development
+caseStudy: null

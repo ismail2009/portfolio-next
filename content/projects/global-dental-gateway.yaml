@@ -1,0 +1,36 @@
+title: Global Dental Gateway
+visible: false
+featured: false
+caseStudy: false
+order: 16
+category:
+  en: Websites
+  ar: مواقع ويب
+year: "2022"
+client: ""
+role:
+  en: ""
+engagement:
+  en: ""
+outcome:
+  en: A central platform for clinic bookings and patient tracking.
+  ar: منصة مركزية لحجوزات العيادات ومتابعة المرضى.
+problem:
+  en: Patient data for dental clinics was scattered across tools.
+  ar: كانت بيانات المرضى في عيادات الأسنان موزعة على أدوات متفرقة.
+decisions: []
+shipped: []
+metric:
+  en: ""
+stack:
+  - React
+  - TypeScript
+links:
+  - label:
+      en: Live website
+      ar: الموقع
+    href: https://globaldentelgatway.herokuapp.com/doctor
+image: /images/projects/global-dental-gateway/image.png
+imageAlt:
+  en: Global Dental Gateway screenshot
+  ar: لقطة شاشة لـ Global Dental Gateway

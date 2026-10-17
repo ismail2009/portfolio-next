@@ -1,0 +1,59 @@
+title: Ruh
+visible: true
+featured: false
+caseStudy: true
+order: 2
+category:
+  en: React Native
+  ar: React Native
+year: 2022–2023
+client: Ruh Corp
+role:
+  en: Full Stack JavaScript Developer
+  ar: مطور Full Stack JavaScript
+engagement:
+  en: Full-time · Sep 2022 – Oct 2023
+  ar: دوام كامل · سبتمبر 2022 – أكتوبر 2023
+outcome:
+  en: Upgraded the React Native app and added Stripe wallet payments plus in-app purchases.
+  ar: رقّيت تطبيق React Native وأضفت الدفع عبر محافظ Stripe والمشتريات داخل التطبيق.
+problem:
+  en: The live app needed a safer dependency upgrade and more ways for users to pay, without breaking it for existing users.
+  ar: احتاج التطبيق المنشور إلى ترقية آمنة للمكتبات وطرق دفع أكثر للمستخدمين، دون أن يتعطّل لمن يستخدمونه حاليًا.
+decisions:
+  - en: Upgraded the React Native version and updated libraries for performance and security.
+    ar: رقّيت إصدار React Native وحدّثت المكتبات لتحسين الأداء والأمان.
+  - en: Integrated Google Pay and Apple Pay through the Stripe gateway.
+    ar: دمجت Google Pay و Apple Pay عبر بوابة Stripe.
+  - en: Set up in-app purchases as an additional revenue stream.
+    ar: أعددت نظام المشتريات داخل التطبيق كمصدر دخل إضافي.
+  - en: Added Google Analytics so the team could see how people actually used the app.
+    ar: أضفت Google Analytics ليرى الفريق كيف يستخدم الناس التطبيق فعليًا.
+shipped:
+  - en: Upgraded React Native app in the stores
+    ar: تطبيق React Native مُرقّى على المتاجر
+  - en: Stripe Google Pay and Apple Pay
+    ar: الدفع عبر Google Pay و Apple Pay من خلال Stripe
+  - en: In-app purchase flow
+    ar: مسار المشتريات داخل التطبيق
+  - en: Analytics for product decisions
+    ar: تحليلات تدعم قرارات المنتج
+metric:
+  en: Payments shipped
+  ar: نظام دفع منشور
+stack:
+  - React Native
+  - TypeScript
+  - React
+  - Stripe
+  - In-app purchases
+  - Google Analytics
+links:
+  - label:
+      en: Google Play
+      ar: Google Play
+    href: https://play.google.com/store/apps/details?id=com.myruh&hl=en
+image: /images/projects/ruh/image.png
+imageAlt:
+  en: Ruh app logo
+  ar: شعار تطبيق Ruh

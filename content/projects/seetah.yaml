@@ -1,0 +1,45 @@
+title: Seetah
+visible: true
+featured: false
+caseStudy: false
+order: 15
+category:
+  en: React Native · iOS + Android
+  ar: React Native · iOS + Android
+year: "2020"
+client: Web Com Technology
+role:
+  en: React Native Developer
+  ar: مطور React Native
+engagement:
+  en: Aug 2020 – Sep 2020
+  ar: أغسطس 2020 – سبتمبر 2020
+outcome:
+  en: Built and released the Seetah app, connected to a Laravel API with Redux Saga and Firebase notifications.
+  ar: بنيت تطبيق Seetah وأطلقته، مربوطًا بـ API مبني على Laravel مع Redux Saga وإشعارات Firebase.
+problem:
+  en: The team needed a reliable, smooth mobile app on top of an existing PHP Laravel backend.
+  ar: احتاج الفريق إلى تطبيق موبايل سلس وموثوق فوق خادم PHP Laravel قائم.
+decisions: []
+shipped: []
+metric:
+  en: Released on both stores
+  ar: منشور على المتجرين
+stack:
+  - React Native
+  - Redux Saga
+  - Laravel API
+  - Firebase
+links:
+  - label:
+      en: App Store
+      ar: App Store
+    href: https://apps.apple.com/sa/app/id1532427109
+  - label:
+      en: Google Play
+      ar: Google Play
+    href: https://play.google.com/store/apps/details?id=com.seetah
+image: /images/projects/seetah/image.png
+imageAlt:
+  en: Seetah logo
+  ar: شعار Seetah

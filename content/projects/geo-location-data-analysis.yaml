@@ -1,0 +1,36 @@
+title: Geo Location Data Analysis
+visible: false
+featured: false
+caseStudy: false
+order: 19
+category:
+  en: Websites
+  ar: مواقع ويب
+year: "2021"
+client: ""
+role:
+  en: ""
+engagement:
+  en: ""
+outcome:
+  en: An interactive web dashboard for exploring geolocation data on a map.
+  ar: لوحة ويب تفاعلية لاستكشاف بيانات المواقع الجغرافية على الخريطة.
+problem:
+  en: Visualizing complex, real-time geolocation data efficiently.
+  ar: عرض بيانات المواقع الجغرافية المعقدة واللحظية بكفاءة.
+decisions: []
+shipped: []
+metric:
+  en: ""
+stack:
+  - React
+  - Mapbox API
+links:
+  - label:
+      en: Live website
+      ar: الموقع
+    href: https://geolocationdataanalysis-app.herokuapp.com/
+image: /images/projects/geo-location-data-analysis/image.png
+imageAlt:
+  en: Geo Location Data Analysis screenshot
+  ar: لقطة شاشة لـ Geo Location Data Analysis

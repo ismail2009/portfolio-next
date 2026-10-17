@@ -1,0 +1,36 @@
+title: Hawas Studio
+visible: false
+featured: false
+caseStudy: false
+order: 18
+category:
+  en: Websites
+  ar: مواقع ويب
+year: "2021"
+client: ""
+role:
+  en: ""
+engagement:
+  en: ""
+outcome:
+  en: A management dashboard for running a studio's admin work.
+  ar: لوحة تحكم لإدارة الأعمال الإدارية للاستوديو.
+problem:
+  en: Streamlining administrative tasks for studios.
+  ar: تبسيط المهام الإدارية في الاستوديوهات.
+decisions: []
+shipped: []
+metric:
+  en: ""
+stack:
+  - React
+  - Node.js
+links:
+  - label:
+      en: Live website
+      ar: الموقع
+    href: https://hawas-studio-app.herokuapp.com
+image: /images/projects/hawas-studio/image.png
+imageAlt:
+  en: Hawas Studio screenshot
+  ar: لقطة شاشة لـ Hawas Studio

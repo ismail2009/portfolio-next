@@ -1,0 +1,21 @@
+company: Unit One Group
+companyAr: ""
+role:
+  en: Full-Stack JavaScript Developer
+  ar: مطور Full-Stack JavaScript
+type:
+  en: Web
+  ar: ويب
+start: 2019-10-01
+end: 2020-01-01
+outcome:
+  en: Improved an inventory web app used by car dealerships, fixing defects reported by QA and users, and built reusable React components from prototypes.
+  ar: حسّنت تطبيق ويب لإدارة المخزون تستخدمه معارض السيارات، وأصلحت الأخطاء التي رصدها فريق الاختبار والمستخدمون، وبنيت مكونات React قابلة لإعادة الاستخدام من النماذج الأولية.
+tags:
+  - React
+  - MobX-state-tree
+  - Material-UI
+  - Feathers.js
+  - Socket.IO
+  - Google Maps
+caseStudy: null

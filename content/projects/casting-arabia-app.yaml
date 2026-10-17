@@ -1,0 +1,40 @@
+title: Casting Arabia App
+visible: true
+featured: false
+caseStudy: false
+order: 11
+category:
+  en: React Native · iOS + Android
+  ar: React Native · iOS + Android
+year: "2022"
+client: Casting Arabia LLC
+role:
+  en: React & React Native Developer
+  ar: مطور React و React Native
+engagement:
+  en: Contract · Jan 2022 – Jul 2022
+  ar: عقد · يناير 2022 – يوليو 2022
+outcome:
+  en: The casting platform as a mobile app, live on both Google Play and the App Store.
+  ar: منصة الكاستنج كتطبيق موبايل، منشور على Google Play و App Store.
+problem:
+  en: Bringing the casting platform experience to mobile devices.
+  ar: نقل تجربة منصة الكاستنج إلى أجهزة الموبايل.
+decisions: []
+shipped: []
+metric:
+  en: Both stores
+  ar: المتجران
+stack:
+  - React Native
+  - TypeScript
+  - Redux
+links:
+  - label:
+      en: App Store
+      ar: App Store
+    href: https://apps.apple.com/tt/app/casting-arabia/id1606692901
+image: /images/projects/casting-arabia-app/image.png
+imageAlt:
+  en: Casting Arabia logo
+  ar: شعار Casting Arabia

@@ -1,0 +1,17 @@
+company: NISR Project
+companyAr: مشروع NISR
+role:
+  en: React Native Developer
+  ar: مطور React Native
+type:
+  en: Part-time
+  ar: دوام جزئي
+start: 2021-02-01
+end: 2022-06-01
+outcome:
+  en: Connected the app to Firebase Auth, Realtime Database and Cloud Storage.
+  ar: ربط التطبيق بمصادقة Firebase وقاعدة البيانات اللحظية و Cloud Storage.
+tags:
+  - React Native
+  - Firebase
+caseStudy: null

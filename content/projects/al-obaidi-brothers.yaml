@@ -1,0 +1,37 @@
+title: Al Obaidi Brothers
+visible: false
+featured: false
+caseStudy: false
+order: 13
+category:
+  en: React Native Mobile Apps
+  ar: تطبيقات React Native
+year: "2022"
+client: ""
+role:
+  en: React Native Developer
+  ar: مطور React Native
+engagement:
+  en: ""
+outcome:
+  en: A car browsing app live on the App Store.
+  ar: تطبيق لتصفح السيارات منشور على App Store.
+problem:
+  en: Digitizing a car dealership's catalog for mobile users.
+  ar: تحويل كتالوج معرض سيارات إلى تجربة رقمية على الموبايل.
+decisions: []
+shipped: []
+metric:
+  en: ""
+stack:
+  - React Native
+  - REST API
+links:
+  - label:
+      en: App Store
+      ar: App Store
+    href: https://apps.apple.com/tt/app/al-obaidi-brothers-for-cars/id1613332241
+image: /images/projects/al-obaidi-brothers/image.png
+imageAlt:
+  en: Al Obaidi Brothers logo
+  ar: شعار Al Obaidi Brothers

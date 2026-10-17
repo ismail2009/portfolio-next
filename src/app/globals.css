@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* Design tokens from the "shipping log" design canvas. */
+@theme {
+  --color-ground: #f6f6f3;
+  --color-surface: #ffffff;
+  --color-sunken: #ecebe6;
+  --color-chip: #f1f1ec;
+  --color-ink: #111318;
+  --color-ink-soft: #2e3238;
+  --color-body: #474b53;
+  --color-muted: #555a63;
+  --color-line: #deded8;
+  --color-line-strong: #c9c9c2;
+  --color-accent: #2b4bf2;
+  --color-ok: #1f9d55;
+
+  /* Dark bands (experience, footer cards) */
+  --color-night: #0f1115;
+  --color-night-raised: #181b21;
+  --color-night-text: #ecece8;
+  --color-night-muted: #a4a9b2;
+  --color-night-line: #262a31;
+  --color-accent-night: #9aabff;
+
+  /* Plex Arabic comes first and only covers Arabic glyphs; Latin text falls through to the next font.
+     (The Latin fonts' generated fallbacks are local Arial covering every glyph, so they must come after.) */
+  --font-display: var(--font-plex-arabic), var(--font-bricolage), system-ui, sans-serif;
+  --font-sans: var(--font-plex-arabic), var(--font-plex), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+
+  --radius-card: 24px;
+  --container-page: 75rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ground font-sans text-[17px] leading-relaxed text-ink antialiased;
+  }
+
+  /* Arabic reads better without negative tracking and with a little more line height. */
+  [dir="rtl"] body {
+    line-height: 1.8;
+  }
+
+  [dir="rtl"] :is(h1, h2, h3) {
+    letter-spacing: 0;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

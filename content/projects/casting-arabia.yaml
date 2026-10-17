@@ -1,0 +1,66 @@
+title: Casting Arabia
+visible: true
+featured: true
+caseStudy: true
+order: 1
+category:
+  en: Web + iOS + Android
+  ar: ويب + iOS + Android
+year: "2022"
+client: Casting Arabia LLC
+role:
+  en: React & React Native Developer
+  ar: مطور React و React Native
+engagement:
+  en: Contract · Jan 2022 – Jul 2022
+  ar: عقد · يناير 2022 – يوليو 2022
+outcome:
+  en: Shipped the casting platform on the web and both app stores, and moved the codebase to TypeScript.
+  ar: أطلقت منصة الكاستنج على الويب وعلى المتجرين، ونقلت الكود إلى TypeScript.
+problem:
+  en: Talent and agencies in the Arab market needed one casting product across web and mobile. The existing JavaScript codebase was harder to maintain as login providers and screens were added.
+  ar: احتاج الممثلون والوكالات في السوق العربي إلى منتج كاستنج واحد على الويب والموبايل. وكان كود JavaScript القائم يصعب صيانته مع إضافة مزوّدي تسجيل الدخول والشاشات الجديدة.
+decisions:
+  - en: Migrated the codebase from JavaScript to TypeScript to make later changes safer.
+    ar: نقلت الكود من JavaScript إلى TypeScript لتصبح التعديلات اللاحقة أكثر أمانًا.
+  - en: Built the web UI with Next.js server rendering and Material-UI, deployed it on AWS Amplify and connected the GoDaddy domain.
+    ar: بنيت واجهة الويب بـ Next.js مع العرض من الخادم و Material-UI، ونشرتها على AWS Amplify وربطتها بنطاق GoDaddy.
+  - en: Added Facebook, LinkedIn and Apple login so candidates could join without a new password.
+    ar: أضفت تسجيل الدخول عبر Facebook و LinkedIn و Apple ليتمكن المرشحون من الانضمام دون كلمة مرور جديدة.
+  - en: Integrated OneSignal push notifications and fixed API integration bugs across the app.
+    ar: دمجت إشعارات OneSignal وأصلحت أخطاء الربط مع الـ API في التطبيق.
+  - en: Shipped the same product as a React Native app on Google Play and the App Store.
+    ar: أطلقت المنتج نفسه كتطبيق React Native على Google Play و App Store.
+shipped:
+  - en: Public website at castingarabia.com
+    ar: الموقع العام castingarabia.com
+  - en: iOS app on the App Store
+    ar: تطبيق iOS على App Store
+  - en: Android app on Google Play
+    ar: تطبيق Android على Google Play
+  - en: TypeScript codebase with social login
+    ar: كود TypeScript مع تسجيل الدخول الاجتماعي
+metric:
+  en: Web + both stores
+  ar: الويب + المتجران
+stack:
+  - TypeScript
+  - React
+  - Next.js
+  - React Native
+  - Material-UI
+  - AWS Amplify
+  - OneSignal
+links:
+  - label:
+      en: Live website
+      ar: الموقع
+    href: https://www.castingarabia.com/
+  - label:
+      en: App Store
+      ar: App Store
+    href: https://apps.apple.com/tt/app/casting-arabia/id1606692901
+image: /images/projects/casting-arabia/image.png
+imageAlt:
+  en: Casting Arabia logo
+  ar: شعار Casting Arabia

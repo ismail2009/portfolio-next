@@ -1,0 +1,136 @@
+{
+  "Metadata": {
+    "title": "Ismail S. Al-Saleh — Senior React & React Native Developer",
+    "description": "Senior React and React Native developer who ships production web and mobile products for EU teams and Arabic-market clients."
+  },
+  "Common": {
+    "skipToContent": "Skip to content",
+    "readCase": "Read the case",
+    "opensInNewTab": "(opens in a new tab)"
+  },
+  "Nav": {
+    "label": "Main",
+    "brand": "Ismail Al-Saleh",
+    "home": "Ismail Al-Saleh — home",
+    "work": "Work",
+    "experience": "Experience",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "book": "Book a call",
+    "switchLanguage": "عربي",
+    "switchLanguageLabel": "Switch to Arabic"
+  },
+  "Hero": {
+    "ctaWork": "View selected work",
+    "ctaBook": "Book a 30-min call",
+    "ctaCv": "Download CV",
+    "logTitle": "~/ismail/ship.log",
+    "logLabel": "Release history"
+  },
+  "Proof": {
+    "label": "At a glance",
+    "shippedFor": "Shipped for"
+  },
+  "Work": {
+    "eyebrow": "01 — Selected work",
+    "title": "Three products, live in production.",
+    "lead": "Every project links to a live site or store listing. Each case covers the problem, the decisions, and what shipped.",
+    "alsoShipped": "Also shipped"
+  },
+  "Experience": {
+    "eyebrow": "02 — Experience",
+    "title": "Production work, latest first.",
+    "lead": "Contracts and full-time roles with teams in Switzerland and across the Arab market. Each line is something that shipped.",
+    "cv": "Download full CV",
+    "present": "Present"
+  },
+  "Services": {
+    "eyebrow": "03 — Work with me",
+    "title": "Two ways to hire me.",
+    "role": {
+      "audience": "For hiring teams",
+      "title": "Senior role",
+      "body": "Frontend or React Native seats on EU and remote teams. I join an existing product, ship the next release, and leave the codebase easier to change.",
+      "point1": "Full-time or long contract",
+      "point2": "Remote, for EU and international teams",
+      "point3": "React, Next.js, React Native, TypeScript",
+      "cta": "Send a role"
+    },
+    "build": {
+      "audience": "For founders and businesses",
+      "title": "Product build",
+      "body": "A small number of client builds each year: web apps, store apps and TypeScript migrations. Delivered in Arabic or English, with a live URL at the end.",
+      "point1": "React Native apps for both stores",
+      "point2": "Next.js web products and dashboards",
+      "point3": "Payments, auth and analytics wired in",
+      "cta": "Book a discovery call"
+    }
+  },
+  "About": {
+    "eyebrow": "04 — About",
+    "education": "Education",
+    "graduation": "Class of {year}",
+    "testimonialLink": "On LinkedIn"
+  },
+  "Contact": {
+    "eyebrow": "05 — Contact",
+    "title": "Is it a role or a product?",
+    "body": "Recruiters can send the role. Clients can book a call or message me on WhatsApp, in Arabic or English.",
+    "whatsapp": "WhatsApp",
+    "copy": "Copy email",
+    "copied": "Copied",
+    "form": {
+      "intent": "This is about",
+      "intentRole": "A senior role",
+      "intentBuild": "A product build",
+      "intentUnsure": "Not sure yet",
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "optional": "(optional)",
+      "messageRole": "The role — link or short description",
+      "messageBuild": "What are you building, and by when?",
+      "messageUnsure": "Message",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "subject": "Portfolio inquiry"
+    }
+  },
+  "Case": {
+    "eyebrow": "Case study · {title}",
+    "back": "All work",
+    "client": "Client",
+    "year": "Year",
+    "platforms": "Platforms",
+    "proof": "Proof",
+    "role": "My role",
+    "stack": "Stack",
+    "problem": "The problem",
+    "decisions": "Key decisions",
+    "shipped": "What shipped",
+    "ctaTitle": "Need something like this?",
+    "ctaBody": "A 30-minute call is enough to scope a web or store app.",
+    "ctaButton": "Book a 30-min call",
+    "more": "More selected work",
+    "metaTitle": "{title} — Case study · Ismail Al-Saleh"
+  },
+  "NotFound": {
+    "metaTitle": "Page not found · Ismail Al-Saleh",
+    "eyebrow": "404",
+    "title": "This page isn't here.",
+    "body": "The link may be old, or the project is no longer published. The selected work is on the home page.",
+    "home": "Back to selected work"
+  },
+  "ThankYou": {
+    "metaTitle": "Message sent · Ismail Al-Saleh",
+    "eyebrow": "Message sent",
+    "title": "Thanks — I'll get back to you.",
+    "body": "Your message is in my inbox. If it's urgent, book a call and we can talk this week.",
+    "home": "Back to the portfolio",
+    "book": "Book a 30-min call"
+  },
+  "Footer": {
+    "rights": "© {year} Ismail S. Al-Saleh"
+  }
+}

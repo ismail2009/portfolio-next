@@ -1,0 +1,7 @@
+.next
+node_modules
+package-lock.json
+next-env.d.ts
+AGENTS.md
+# Written by Keystatic; formatting it here would churn every admin save.
+content

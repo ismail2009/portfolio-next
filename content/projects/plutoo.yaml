@@ -1,0 +1,61 @@
+title: Plutoo
+visible: true
+featured: false
+caseStudy: true
+order: 3
+category:
+  en: Cross-platform mobile
+  ar: تطبيق موبايل متعدد المنصات
+year: "2019"
+client: Save Youth Future Society · Gaza Goes Global
+role:
+  en: React Native Developer
+  ar: مطور React Native
+engagement:
+  en: Jun 2019 – Oct 2019
+  ar: يونيو 2019 – أكتوبر 2019
+outcome:
+  en: Shipped a cross-platform social app that reached thousands of active users on both stores.
+  ar: أطلقت تطبيقًا اجتماعيًا متعدد المنصات وصل إلى آلاف المستخدمين النشطين على المتجرين.
+problem:
+  en: The product needed a React Native app that felt native and reliable on both iOS and Android, not a prototype that only worked on one platform.
+  ar: احتاج المنتج إلى تطبيق React Native يعمل بسلاسة واعتمادية كتطبيق أصلي على iOS و Android، لا نموذجًا أوليًا يعمل على منصة واحدة.
+decisions:
+  - en: Turned the prototype into pixel-perfect, smooth UIs on both platforms from one React Native and Redux-Thunk codebase.
+    ar: حوّلت النموذج الأولي إلى واجهات دقيقة وسلسة على المنصتين من كود واحد بـ React Native و Redux-Thunk.
+  - en: Used native APIs for deeper integration with iOS and Android.
+    ar: استخدمت واجهات البرمجة الأصلية لتكامل أعمق مع iOS و Android.
+  - en: Added Firebase Cloud Messaging push notifications and deep linking.
+    ar: أضفت إشعارات Firebase Cloud Messaging والروابط العميقة.
+  - en: Diagnosed and fixed bugs and performance bottlenecks so the app felt native.
+    ar: شخّصت وأصلحت الأخطاء ونقاط بطء الأداء ليبدو التطبيق أصليًا.
+shipped:
+  - en: Live on Google Play and the App Store
+    ar: منشور على Google Play و App Store
+  - en: Shared iOS and Android codebase
+    ar: كود مشترك لـ iOS و Android
+  - en: Push notifications and deep links
+    ar: إشعارات وروابط عميقة
+  - en: Thousands of active users
+    ar: آلاف المستخدمين النشطين
+metric:
+  en: Thousands of users
+  ar: آلاف المستخدمين
+stack:
+  - React Native
+  - Redux-Thunk
+  - Firebase Cloud Messaging
+  - Bitbucket
+links:
+  - label:
+      en: Google Play
+      ar: Google Play
+    href: https://play.google.com/store/apps/details?id=com.plutoo.plutoo
+  - label:
+      en: App Store
+      ar: App Store
+    href: https://apps.apple.com/il/app/plutoo/id1489482334
+image: /images/projects/plutoo/image.png
+imageAlt:
+  en: Plutoo app icon
+  ar: أيقونة تطبيق Plutoo

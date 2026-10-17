@@ -1,0 +1,36 @@
+title: MyPickle
+visible: false
+featured: false
+caseStudy: false
+order: 14
+category:
+  en: Websites
+  ar: مواقع ويب
+year: "2022"
+client: ""
+role:
+  en: ""
+engagement:
+  en: ""
+outcome:
+  en: A web application built from scratch with React and Node.js.
+  ar: تطبيق ويب مبني من الصفر بـ React و Node.js.
+problem:
+  en: Building a modern, fast web application from scratch.
+  ar: بناء تطبيق ويب حديث وسريع من الصفر.
+decisions: []
+shipped: []
+metric:
+  en: ""
+stack:
+  - React
+  - Node.js
+links:
+  - label:
+      en: Live website
+      ar: الموقع
+    href: https://MyPickle.netlify.com
+image: /images/projects/mypickle/image.png
+imageAlt:
+  en: MyPickle screenshot
+  ar: لقطة شاشة لـ MyPickle
