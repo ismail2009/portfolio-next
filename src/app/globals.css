@@ -12,6 +12,7 @@
   --color-muted: #555a63;
   --color-line: #deded8;
   --color-line-strong: #c9c9c2;
+  --color-field: #8a8e95; /* Form control borders: 3:1 against white, as WCAG 1.4.11 asks. */
   --color-accent: #2b4bf2;
   --color-ok: #1f9d55;
 

@@ -131,6 +131,7 @@
     "book": "Book a 30-min call"
   },
   "Footer": {
-    "rights": "© {year} Ismail S. Al-Saleh"
+    "rights": "© {year} Ismail S. Al-Saleh",
+    "email": "Email"
   }
 }

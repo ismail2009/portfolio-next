@@ -27,7 +27,7 @@ export async function SiteFooter() {
           ))}
           <li>
             <a href={`mailto:${settings.email}`} className="block py-2.5 hover:text-accent">
-              Email
+              {t("email")}
             </a>
           </li>
         </ul>

@@ -14,10 +14,11 @@ export function LanguageSwitch() {
     <Link
       href={pathname}
       locale={otherLocale}
-      aria-label={t("switchLanguageLabel")}
       className="flex h-11 items-center rounded-[10px] border border-line bg-surface px-3.5 text-sm font-semibold no-underline hover:border-line-strong"
     >
+      {/* The accessible name starts with the visible text, so voice control can target it (WCAG 2.5.3). */}
       <span lang={otherLocale}>{t("switchLanguage")}</span>
+      <span className="sr-only"> – {t("switchLanguageLabel")}</span>
     </Link>
   );
 }

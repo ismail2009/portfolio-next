@@ -10,7 +10,7 @@ const intentKey = { role: "intentRole", build: "intentBuild", unsure: "intentUns
 const messageKey = { role: "messageRole", build: "messageBuild", unsure: "messageUnsure" } as const;
 
 const inputClass =
-  "h-[50px] rounded-xl border border-line-strong bg-[#fbfbf9] px-3.5 text-base text-ink focus:border-ink";
+  "h-[50px] rounded-xl border border-field bg-[#fbfbf9] px-3.5 text-base text-ink focus:border-ink";
 
 export function ContactForm({ action, nextUrl }: { action: string; nextUrl: string }) {
   const t = useTranslations("Contact.form");
@@ -51,7 +51,7 @@ export function ContactForm({ action, nextUrl }: { action: string; nextUrl: stri
           {intents.map((value) => (
             <label
               key={value}
-              className="flex min-h-11 cursor-pointer items-center gap-2.5 rounded-full border border-line-strong bg-[#fbfbf9] px-4 text-[15px] font-medium transition-colors has-checked:border-ink has-checked:bg-ink has-checked:text-white has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-accent"
+              className="flex min-h-11 cursor-pointer items-center gap-2.5 rounded-full border border-field bg-[#fbfbf9] px-4 text-[15px] font-medium transition-colors has-checked:border-ink has-checked:bg-ink has-checked:text-white has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-accent"
             >
               <input
                 type="radio"
@@ -101,7 +101,7 @@ export function ContactForm({ action, nextUrl }: { action: string; nextUrl: stri
           name="message"
           rows={5}
           required
-          className="resize-y rounded-xl border border-line-strong bg-[#fbfbf9] px-3.5 py-3 text-base text-ink focus:border-ink"
+          className="resize-y rounded-xl border border-field bg-[#fbfbf9] px-3.5 py-3 text-base text-ink focus:border-ink"
         />
       </Field>
 
