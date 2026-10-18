@@ -2,8 +2,10 @@ import { collection, config, fields, singleton } from "@keystatic/core";
 
 // Edits are committed to GitHub once the Keystatic GitHub app is connected (its env vars are set);
 // until then, and always in development, they are saved to local files.
-// TODO: confirm the repo name once it is created on GitHub.
-const useGitHub = process.env.NODE_ENV !== "development" && Boolean(process.env.KEYSTATIC_GITHUB_CLIENT_ID);
+// This config also runs in the browser, which only sees NEXT_PUBLIC_ variables, so the switch must be
+// a public one: keyed on the client ID, the admin UI would run in local mode against a GitHub server.
+const useGitHub =
+  process.env.NODE_ENV !== "development" && Boolean(process.env.NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG);
 
 const storage = useGitHub
   ? ({ kind: "github", repo: { owner: "ismail2009", name: "portfolio-next" } } as const)
