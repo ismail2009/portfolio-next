@@ -9,6 +9,13 @@ updates:
         patterns: ["next", "eslint-config-next", "react", "react-dom", "@types/react", "@types/react-dom"]
       keystatic:
         patterns: ["@keystatic/*"]
+    ignore:
+      # Types track the Node runtime (24); bump together with .node-version.
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
+      # Next 16 doesn't support TypeScript 7 yet.
+      - dependency-name: typescript
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
