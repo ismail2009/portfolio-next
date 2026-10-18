@@ -9,7 +9,7 @@
 import { copyFile, mkdir, readFile, writeFile, access } from "node:fs/promises";
 import { dirname, extname, join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
-import yaml from "js-yaml";
+import * as yaml from "js-yaml";
 
 const args = process.argv.slice(2);
 const force = args.includes("--force");
