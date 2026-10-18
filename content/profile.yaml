@@ -3,26 +3,32 @@ heroTitle:
   ar: أبني منتجات React و React Native
 heroAccent:
   en: actually download.
-  ar: يحمّلها الناس فعلًا.
+  ar: يحمّلها الناس فعلًا..
 heroDescription:
-  en: Senior frontend and mobile developer. Five years of production work for EU teams and Arabic-market clients — from TypeScript migrations to apps live on the App Store and Google Play.
-  ar: مطور واجهات وتطبيقات موبايل أول. خمس سنوات من العمل الإنتاجي لفرق أوروبية وعملاء في السوق العربي — من التحويل إلى TypeScript حتى تطبيقات منشورة على App Store و Google Play.
+  en: >-
+    Senior frontend and mobile developer. Five years of production work for EU
+    teams and Arabic-market clients — from TypeScript migrations to apps live on
+    the App Store and Google Play.
+  ar: >-
+    مطور واجهات وتطبيقات موبايل أول. خمس سنوات من العمل الإنتاجي لفرق أوروبية
+    وعملاء في السوق العربي — من التحويل إلى TypeScript حتى تطبيقات منشورة على
+    App Store و Google Play.
 shipLog:
-  - when: "2025"
+  - when: '2025'
     what:
       en: LeaseTeq AG · Switzerland
       ar: LeaseTeq AG · سويسرا
     detail:
       en: Next.js features, Tailwind UI, priority fixes
       ar: ميزات Next.js، واجهات Tailwind، إصلاحات عاجلة
-  - when: "2023"
+  - when: '2023'
     what:
       en: Ruh · App stores
       ar: Ruh · المتاجر
     detail:
       en: Stripe Apple Pay + Google Pay, in-app purchases
       ar: Apple Pay و Google Pay عبر Stripe، مشتريات داخل التطبيق
-  - when: "2022"
+  - when: '2022'
     what:
       en: Casting Arabia · 3 platforms
       ar: Casting Arabia · 3 منصات
@@ -56,10 +62,10 @@ metrics:
     label:
       en: Apps on App Store and Google Play
       ar: تطبيقات على المتجرين
-  - value: "3"
+  - value: '3'
     label:
-      en: "Platforms: web, iOS, Android"
-      ar: "منصات: الويب و iOS و Android"
+      en: 'Platforms: web, iOS, Android'
+      ar: 'منصات: الويب و iOS و Android'
   - value: EN / AR
     label:
       en: Delivery languages
@@ -68,8 +74,15 @@ aboutTitle:
   en: A product engineer who cares about the release, not just the commit.
   ar: مهندس منتجات يهتم بالإصدار، لا بالكود فقط.
 aboutBody:
-  en: Computer Science graduate from Al-Azhar University, Gaza. For five years I have shipped React and React Native products for European teams and Arabic-market clients, working in English and Arabic. I mentored students at the Gaza Sky Geeks coding academy in 2017–2018.
-  ar: خريج علوم حاسوب من جامعة الأزهر في غزة. خلال خمس سنوات سلّمت منتجات React و React Native لفرق أوروبية وعملاء في السوق العربي، بالعربية والإنجليزية. وأرشدت الطلاب في أكاديمية البرمجة في Gaza Sky Geeks خلال 2017–2018.
+  en: >-
+    Computer Science graduate from Al-Azhar University, Gaza. For five years I
+    have shipped React and React Native products for European teams and
+    Arabic-market clients, working in English and Arabic. I mentored students at
+    the Gaza Sky Geeks coding academy in 2017–2018.
+  ar: >-
+    خريج علوم حاسوب من جامعة الأزهر في غزة. خلال خمس سنوات سلّمت منتجات React و
+    React Native لفرق أوروبية وعملاء في السوق العربي، بالعربية والإنجليزية.
+    وأرشدت الطلاب في أكاديمية البرمجة في Gaza Sky Geeks خلال 2017–2018.
 tools:
   - React
   - Next.js
@@ -147,7 +160,7 @@ education:
   school:
     en: Al-Azhar University, Gaza
     ar: جامعة الأزهر، غزة
-  graduation: "2026"
+  graduation: '2026'
 training:
   - title:
       en: Full-Time Training Program on Full-Stack JavaScript Web Development
