@@ -36,6 +36,8 @@ export function ContactForm({ action, nextUrl }: { action: string; nextUrl: stri
       <input type="hidden" name="_next" value={nextUrl} />
       <input type="hidden" name="_subject" value={t("subject")} />
       <input type="hidden" name="_template" value="table" />
+      {/* FormSubmit's captcha is an English-only page off the site; the honeypot below handles basic bots. */}
+      <input type="hidden" name="_captcha" value="false" />
       <input
         type="text"
         name="_honey"
