@@ -4,8 +4,8 @@ featured: false
 caseStudy: true
 order: 3
 category:
-  en: Cross-platform mobile
-  ar: تطبيق موبايل متعدد المنصات
+  en: Nursery–parent app · iOS + Android
+  ar: تطبيق للحضانات وأولياء الأمور · iOS + Android
 year: "2019"
 client: Save Youth Future Society · Gaza Goes Global
 role:
@@ -15,42 +15,40 @@ engagement:
   en: Jun 2019 – Oct 2019
   ar: يونيو 2019 – أكتوبر 2019
 outcome:
-  en: Shipped a cross-platform social app that reached thousands of active users on both stores.
-  ar: أطلقت تطبيقًا اجتماعيًا متعدد المنصات وصل إلى آلاف المستخدمين النشطين على المتجرين.
+  en: Shipped a nursery app on iOS and Android that keeps parents updated on their child's day, from meals and activities to naps and announcements, privately and without social media.
+  ar: أطلقت تطبيقًا للحضانات على iOS و Android يُطلع الأهل على يوم طفلهم، من الوجبات والأنشطة إلى القيلولة والإعلانات، بخصوصية ودون وسائل التواصل الاجتماعي.
 problem:
-  en: The product needed a React Native app that felt native and reliable on both iOS and Android, not a prototype that only worked on one platform.
-  ar: احتاج المنتج إلى تطبيق React Native يعمل بسلاسة واعتمادية كتطبيق أصلي على iOS و Android، لا نموذجًا أوليًا يعمل على منصة واحدة.
+  en: Nurseries were updating parents through paper notes, phone calls and social media groups. They needed one private channel where staff post about each child or group, and only that child's parents can see it.
+  ar: كانت الحضانات تتواصل مع الأهل عبر الأوراق والمكالمات ومجموعات التواصل الاجتماعي، واحتاجت إلى قناة خاصة واحدة ينشر فيها المشرفون عن كل طفل أو مجموعة، ولا يراها إلا أهل ذلك الطفل.
 decisions:
-  - en: Turned the prototype into pixel-perfect, smooth UIs on both platforms from one React Native and Redux-Thunk codebase.
-    ar: حوّلت النموذج الأولي إلى واجهات دقيقة وسلسة على المنصتين من كود واحد بـ React Native و Redux-Thunk.
-  - en: Used native APIs for deeper integration with iOS and Android.
-    ar: استخدمت واجهات البرمجة الأصلية لتكامل أعمق مع iOS و Android.
-  - en: Added Firebase Cloud Messaging push notifications and deep linking.
-    ar: أضفت إشعارات Firebase Cloud Messaging والروابط العميقة.
-  - en: Diagnosed and fixed bugs and performance bottlenecks so the app felt native.
-    ar: شخّصت وأصلحت الأخطاء ونقاط بطء الأداء ليبدو التطبيق أصليًا.
+  - en: Built two sign-in paths, one for nursery staff and one for parents, who log in with the mobile number registered to their child.
+    ar: بنيت مسارين لتسجيل الدخول، واحد لمشرفي الحضانة وآخر لأولياء الأمور الذين يدخلون برقم الجوال المسجّل لطفلهم.
+  - en: Let staff post to all groups, one group or selected children, so each update reaches only the right parents.
+    ar: أتحت للمشرفين النشر لكل المجموعات أو لمجموعة واحدة أو لأطفال محددين، ليصل كل تحديث إلى الأهل المعنيين فقط.
+  - en: Kept parents' comments private between that child's parents, the supervisor and the nursery admin.
+    ar: جعلت تعليقات الأهل خاصة بين أهل الطفل والمشرف وإدارة الحضانة فقط.
+  - en: Built pixel-perfect, smooth UIs on both platforms from one React Native and Redux-Thunk codebase, using native APIs where needed.
+    ar: بنيت واجهات دقيقة وسلسة على المنصتين من كود واحد بـ React Native و Redux-Thunk، مع واجهات البرمجة الأصلية عند الحاجة.
+  - en: Added Firebase Cloud Messaging push notifications and deep links, and fixed performance bottlenecks so the app felt native.
+    ar: أضفت إشعارات Firebase Cloud Messaging والروابط العميقة، وأصلحت نقاط بطء الأداء ليبدو التطبيق أصليًا.
 shipped:
-  - en: Live on Google Play and the App Store
-    ar: منشور على Google Play و App Store
-  - en: Shared iOS and Android codebase
-    ar: كود مشترك لـ iOS و Android
+  - en: Released on Google Play and the App Store
+    ar: أُطلق على Google Play و App Store
+  - en: Posts for updates, announcements, attendance, pickups and payments
+    ar: منشورات للتحديثات والإعلانات والحضور والتسليم والحركات المالية
+  - en: Private comments between parents and staff
+    ar: تعليقات خاصة بين الأهل والمشرفين
   - en: Push notifications and deep links
     ar: إشعارات وروابط عميقة
-  - en: Thousands of active users
-    ar: آلاف المستخدمين النشطين
 metric:
-  en: Thousands of users
-  ar: آلاف المستخدمين
+  en: Released on both stores
+  ar: أُطلق على المتجرين
 stack:
   - React Native
   - Redux-Thunk
   - Firebase Cloud Messaging
   - Bitbucket
 links:
-  - label:
-      en: Google Play
-      ar: Google Play
-    href: https://play.google.com/store/apps/details?id=com.plutoo.plutoo
   - label:
       en: App Store
       ar: App Store
@@ -59,3 +57,28 @@ image: /images/projects/plutoo/image.png
 imageAlt:
   en: Plutoo app icon
   ar: أيقونة تطبيق Plutoo
+screenshots:
+  - image: /images/projects/plutoo/screens/1.webp
+    alt:
+      en: Welcome screen in Arabic with separate sign-in for nursery staff and for parents
+      ar: شاشة الترحيب بالعربية مع دخول منفصل لمشرفي الحضانة ولأولياء الأمور
+  - image: /images/projects/plutoo/screens/2.webp
+    alt:
+      en: Staff sign-in with username, password and password recovery
+      ar: تسجيل دخول المشرف باسم المستخدم وكلمة المرور واستعادة كلمة المرور
+  - image: /images/projects/plutoo/screens/3.webp
+    alt:
+      en: The nursery's classes with the number of children in each, and a button to write a new post
+      ar: صفوف الحضانة مع عدد الأطفال في كل صف، وزر لكتابة منشور جديد
+  - image: /images/projects/plutoo/screens/4.webp
+    alt:
+      en: A class feed of announcements and posts for parents, with images, author and time
+      ar: منشورات وإعلانات الصف لأولياء الأمور، مع الصور والكاتب والوقت
+  - image: /images/projects/plutoo/screens/5.webp
+    alt:
+      en: "Choosing a post type: post, announcement, attendance, pickup or payment"
+      ar: "اختيار نوع المنشور: منشور أو إعلان أو حضور أو تسليم أو حركة مالية"
+  - image: /images/projects/plutoo/screens/6.webp
+    alt:
+      en: New post form with type, date and time, text, image and video link
+      ar: نموذج منشور جديد مع النوع والتاريخ والوقت والنص والصورة ورابط الفيديو

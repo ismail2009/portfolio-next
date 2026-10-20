@@ -48,11 +48,7 @@ stack:
   - Stripe
   - In-app purchases
   - Google Analytics
-links:
-  - label:
-      en: Google Play
-      ar: Google Play
-    href: https://play.google.com/store/apps/details?id=com.myruh&hl=en
+links: []
 image: /images/projects/ruh/image.png
 imageAlt:
   en: Ruh app logo

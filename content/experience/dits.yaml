@@ -1,0 +1,19 @@
+company: Dits
+companyAr: ""
+role:
+  en: React Native Developer
+  ar: مطور React Native
+type:
+  en: Part-time
+  ar: دوام جزئي
+start: 2020-09-01
+end: 2020-12-01
+outcome:
+  en: Stepped in mid-project after the mobile developers left, and finished the remaining features of 4 React Native apps against the backend developer's Laravel APIs, including Google Maps tracking of moving points and targets, and Firebase notifications.
+  ar: انضممت في منتصف المشروع بعد مغادرة مطوري الموبايل، وأكملت الميزات المتبقية في 4 تطبيقات React Native فوق واجهات Laravel التي بناها مطور الخادم، ومنها تتبع النقاط المتحركة والأهداف عبر Google Maps وإشعارات Firebase.
+tags:
+  - React Native
+  - Google Maps
+  - Laravel API
+  - Firebase
+caseStudy: null

@@ -32,10 +32,6 @@ stack:
   - Firebase
 links:
   - label:
-      en: App Store
-      ar: App Store
-    href: https://apps.apple.com/sa/app/id1532427109
-  - label:
       en: Google Play
       ar: Google Play
     href: https://play.google.com/store/apps/details?id=com.seetah

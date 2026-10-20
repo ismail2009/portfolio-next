@@ -1,0 +1,19 @@
+company: Unit One Group
+companyAr: ""
+role:
+  en: React Native Developer
+  ar: مطور React Native
+type:
+  en: Contract
+  ar: عقد
+start: 2020-07-01
+end: 2020-09-01
+outcome:
+  en: Built the Luna-TV app with pixel-perfect reusable components, connected it to a Laravel API with Redux Saga, added Google and Facebook login, and released it on the App Store.
+  ar: بنيت تطبيق Luna-TV بمكونات دقيقة التصميم وقابلة لإعادة الاستخدام، وربطته بـ API مبني على Laravel باستخدام Redux Saga، وأضفت تسجيل الدخول عبر Google و Facebook، وأطلقته على App Store.
+tags:
+  - React Native
+  - Redux Saga
+  - Laravel API
+  - Social login
+caseStudy: null

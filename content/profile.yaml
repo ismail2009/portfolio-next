@@ -76,14 +76,20 @@ aboutTitle:
   ar: مهندس منتجات يهتم بالإصدار، لا بالكود فقط.
 aboutBody:
   en: >-
-    Computer Science graduate from Al-Azhar University, Gaza. For five years I
-    have shipped React and React Native products for European teams and
-    Arabic-market clients, working in English and Arabic. I mentored students at
-    the Gaza Sky Geeks coding academy in 2017–2018.
+    I worked my way through a Computer Science degree at Al-Azhar University,
+    Gaza. In my third year I joined the Gaza Sky Geeks coding bootcamp, stayed
+    on as a mentor, and got my first paid product work through Tech for Better,
+    in a team split between London and Gaza. Since then I have spent five years
+    shipping React and React Native products for European teams and
+    Arabic-market clients, in English and Arabic, and I finished my degree
+    part-time alongside the work in 2026.
   ar: >-
-    خريج علوم حاسوب من جامعة الأزهر في غزة. خلال خمس سنوات سلّمت منتجات React و
-    React Native لفرق أوروبية وعملاء في السوق العربي، بالعربية والإنجليزية.
-    وأرشدت الطلاب في أكاديمية البرمجة في Gaza Sky Geeks خلال 2017–2018.
+    عملت إلى جانب دراستي لعلوم الحاسوب في جامعة الأزهر في غزة. في سنتي الثالثة
+    التحقت بمعسكر البرمجة في Gaza Sky Geeks، ثم بقيت فيه مرشدًا، وحصلت على أول
+    عمل مدفوع على منتج حقيقي عبر برنامج Tech for Better ضمن فريق موزّع بين لندن
+    وغزة. ومنذ ذلك الحين قضيت خمس سنوات في تسليم منتجات React و React Native
+    لفرق أوروبية وعملاء في السوق العربي، بالعربية والإنجليزية، وأنهيت دراستي
+    بدوام جزئي إلى جانب العمل في 2026.
 tools:
   - React
   - Next.js

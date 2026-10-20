@@ -1,17 +1,18 @@
 company: Gaza Sky Geeks
 companyAr: ""
 role:
-  en: Coding Academy Mentor
-  ar: مرشد في أكاديمية البرمجة
+  en: Full-Stack JavaScript bootcamp, then mentor
+  ar: معسكر Full-Stack JavaScript، ثم مرشد
 type:
-  en: Mentoring
-  ar: إرشاد
+  en: Training & mentoring
+  ar: تدريب وإرشاد
 start: 2017-11-01
 end: 2018-04-01
 outcome:
-  en: Mentored students in the full-time Full-Stack JavaScript coding academy.
-  ar: أرشدت الطلاب في أكاديمية البرمجة بدوام كامل لتطوير JavaScript المتكامل.
+  en: Completed the full-time Full-Stack JavaScript bootcamp, run with Founders & Coders in London, then stayed on to mentor the next students in the coding academy.
+  ar: أنهيت معسكر Full-Stack JavaScript بدوام كامل، الذي يُقام بالشراكة مع Founders & Coders في لندن، ثم بقيت لأرشد الطلاب التالين في أكاديمية البرمجة.
 tags:
   - JavaScript
+  - Node.js
   - Mentoring
 caseStudy: null

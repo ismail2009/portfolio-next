@@ -34,14 +34,14 @@
   },
   "Work": {
     "eyebrow": "01 — Selected work",
-    "title": "Three products, live in production.",
-    "lead": "Every project links to a live site or store listing. Each case covers the problem, the decisions, and what shipped.",
+    "title": "From a first MVP to apps in the stores.",
+    "lead": "Each case covers the problem, the decisions, and what shipped, with links to the live app or store listing where it is still online.",
     "alsoShipped": "Also shipped"
   },
   "Experience": {
     "eyebrow": "02 — Experience",
     "title": "Production work, latest first.",
-    "lead": "Contracts and full-time roles with teams in Switzerland and across the Arab market. Each line is something that shipped.",
+    "lead": "Contracts and full-time roles with teams in Switzerland, the UK and across the Arab market, back to the bootcamp where it started.",
     "cv": "Download full CV",
     "present": "Present"
   },

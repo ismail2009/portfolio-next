@@ -26,11 +26,7 @@ metric:
 stack:
   - React Native
   - REST API
-links:
-  - label:
-      en: App Store
-      ar: App Store
-    href: https://apps.apple.com/tt/app/al-obaidi-brothers-for-cars/id1613332241
+links: []
 image: /images/projects/al-obaidi-brothers/image.png
 imageAlt:
   en: Al Obaidi Brothers logo
