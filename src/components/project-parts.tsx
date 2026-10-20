@@ -62,6 +62,44 @@ export function LogoTile({
   );
 }
 
+/**
+ * App screens in a strip that scrolls sideways (and follows the page direction in Arabic).
+ * The strip is focusable so keyboard users can scroll it with the arrow keys.
+ */
+export function ScreenStrip({
+  project,
+  locale,
+  labelledBy,
+}: {
+  project: Project;
+  locale: string;
+  labelledBy: string;
+}) {
+  return (
+    <div
+      role="region"
+      aria-labelledby={labelledBy}
+      tabIndex={0}
+      className="-mx-6 snap-x snap-mandatory scroll-px-6 overflow-x-auto px-6 pb-4 focus-visible:outline-2 focus-visible:outline-accent"
+    >
+      <ul className="m-0 flex w-max list-none gap-4 p-0 md:gap-5">
+        {project.screenshots.map((screen) => (
+          <li key={screen.image} className="w-50 shrink-0 snap-start md:w-62.5">
+            <Image
+              src={screen.image}
+              alt={localize(screen.alt, locale)}
+              width={screen.width}
+              height={screen.height}
+              sizes="(min-width: 768px) 250px, 200px"
+              className="h-auto w-full rounded-[22px] border border-line bg-sunken"
+            />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 // Each tag is isolated as left-to-right text, but the row still follows the page direction.
 export function Stack({ items, tone = "light" }: { items: readonly string[]; tone?: "light" | "dark" }) {
   return (

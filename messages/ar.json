@@ -71,7 +71,8 @@
     "eyebrow": "04 — نبذة",
     "education": "التعليم",
     "graduation": "دفعة {year}",
-    "testimonialLink": "على LinkedIn"
+    "testimonialLink": "على LinkedIn",
+    "photoAlt": "إسماعيل الصالح"
   },
   "Contact": {
     "eyebrow": "05 — تواصل",
@@ -109,6 +110,7 @@
     "problem": "المشكلة",
     "decisions": "القرارات الأساسية",
     "shipped": "ما تم إطلاقه",
+    "screens": "الشاشات",
     "ctaTitle": "تحتاج شيئًا مشابهًا؟",
     "ctaBody": "مكالمة 30 دقيقة تكفي لتحديد نطاق تطبيق ويب أو تطبيق متاجر.",
     "ctaButton": "احجز مكالمة 30 دقيقة",

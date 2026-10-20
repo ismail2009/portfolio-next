@@ -64,3 +64,28 @@ image: /images/projects/casting-arabia/image.png
 imageAlt:
   en: Casting Arabia logo
   ar: شعار Casting Arabia
+screenshots:
+  - image: /images/projects/casting-arabia/screens/1.webp
+    alt:
+      en: Sign-in screen where the user chooses to join as talent or as a creator
+      ar: شاشة الدخول حيث يختار المستخدم الانضمام كموهبة أو كصانع محتوى
+  - image: /images/projects/casting-arabia/screens/2.webp
+    alt:
+      en: Form for posting a new casting opportunity
+      ar: نموذج نشر فرصة تمثيل جديدة
+  - image: /images/projects/casting-arabia/screens/3.webp
+    alt:
+      en: A creator's dashboard with their opportunities and the roles awaiting review
+      ar: لوحة صانع المحتوى مع فرصه والأدوار التي تنتظر المراجعة
+  - image: /images/projects/casting-arabia/screens/4.webp
+    alt:
+      en: Choosing a role in an opportunity and applying for it
+      ar: اختيار دور في فرصة والتقديم عليه
+  - image: /images/projects/casting-arabia/screens/5.webp
+    alt:
+      en: Opportunity details with the production information and its roles
+      ar: تفاصيل الفرصة مع معلومات الإنتاج والأدوار المتاحة
+  - image: /images/projects/casting-arabia/screens/6.webp
+    alt:
+      en: Browsing open opportunities and shows as talent
+      ar: تصفح الفرص والأعمال المتاحة كموهبة

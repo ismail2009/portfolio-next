@@ -57,3 +57,20 @@ image: /images/projects/ruh/image.png
 imageAlt:
   en: Ruh app logo
   ar: شعار تطبيق Ruh
+screenshots:
+  - image: /images/projects/ruh/screens/1.webp
+    alt:
+      en: "Ruh home screen: a welcome message and a grid of contemplation, breathing and soundscape sessions"
+      ar: "الشاشة الرئيسية في Ruh: رسالة ترحيب وشبكة من جلسات التأمل والتنفس والأصوات الطبيعية"
+  - image: /images/projects/ruh/screens/2.webp
+    alt:
+      en: Mood check-in asking how you are feeling today, with a set of emotion faces
+      ar: سؤال عن حالتك المزاجية اليوم مع مجموعة من الوجوه التعبيرية
+  - image: /images/projects/ruh/screens/3.webp
+    alt:
+      en: A guided contemplation session with its numbered steps
+      ar: جلسة تأمل موجّهة مع خطواتها المرقّمة
+  - image: /images/projects/ruh/screens/4.webp
+    alt:
+      en: Store cover with a user quote about feeling a renewed purpose after a few sessions
+      ar: صورة المتجر مع اقتباس من مستخدم عن شعوره بهدف متجدد بعد بضع جلسات

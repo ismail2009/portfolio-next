@@ -1,4 +1,7 @@
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { createReader } from "@keystatic/core/reader";
+import { imageSize } from "image-size";
 import { cacheLife } from "next/cache";
 import keystaticConfig from "../../keystatic.config";
 
@@ -33,10 +36,24 @@ export async function getProjects() {
   "use cache";
   cacheLife("max");
   const projects = await reader.collections.projects.all();
-  return projects
+  const visible = projects
     .map(({ slug, entry }) => ({ slug, ...entry }))
     .filter((project) => project.visible)
     .sort((a, b) => (a.order ?? 100) - (b.order ?? 100));
+  return Promise.all(
+    visible.map(async (project) => ({
+      ...project,
+      screenshots: await Promise.all(project.screenshots.map(withSize)),
+    })),
+  );
+}
+
+// Screens differ in shape between apps, so each one's size is read from the file at build time
+// to let next/image reserve the right space.
+async function withSize<T extends { image: string | null }>(screen: T) {
+  const src = screen.image ?? "";
+  const { width, height } = imageSize(await readFile(path.join(process.cwd(), "public", src)));
+  return { ...screen, image: src, width, height };
 }
 
 export type Project = Awaited<ReturnType<typeof getProjects>>[number];

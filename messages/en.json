@@ -71,7 +71,8 @@
     "eyebrow": "04 — About",
     "education": "Education",
     "graduation": "Class of {year}",
-    "testimonialLink": "On LinkedIn"
+    "testimonialLink": "On LinkedIn",
+    "photoAlt": "Ismail Al-Saleh"
   },
   "Contact": {
     "eyebrow": "05 — Contact",
@@ -109,6 +110,7 @@
     "problem": "The problem",
     "decisions": "Key decisions",
     "shipped": "What shipped",
+    "screens": "Screens",
     "ctaTitle": "Need something like this?",
     "ctaBody": "A 30-minute call is enough to scope a web or store app.",
     "ctaButton": "Book a 30-min call",

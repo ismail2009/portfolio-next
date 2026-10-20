@@ -6,7 +6,7 @@ import { routing } from "@/i18n/routing";
 import { ArrowForward, Check } from "@/components/icons";
 import { ExternalLink } from "@/components/external-link";
 import { LocalizedText } from "@/components/localized-text";
-import { LogoTile, Stack, StoreLinks } from "@/components/project-parts";
+import { LogoTile, ScreenStrip, Stack, StoreLinks } from "@/components/project-parts";
 import { Eyebrow } from "@/components/section-heading";
 import { getCaseStudies, getCaseStudy, getSettings, localize, type Localized } from "@/lib/content";
 
@@ -102,6 +102,15 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
           <LogoTile project={project} locale={locale} size="hero" priority />
         </div>
       </div>
+
+      {project.screenshots.length > 0 && (
+        <section aria-labelledby="case-screens" className="mx-auto flex max-w-page flex-col gap-6 px-6 pb-24">
+          <h2 id="case-screens" className="m-0 font-display text-[32px] font-extrabold tracking-[-0.025em]">
+            {t("screens")}
+          </h2>
+          <ScreenStrip project={project} locale={locale} labelledBy="case-screens" />
+        </section>
+      )}
 
       <div className="mx-auto flex max-w-page flex-wrap gap-16 px-6 pb-28">
         <div className="flex min-w-0 flex-[999_1_600px] flex-col gap-16">

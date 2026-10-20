@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 import { ArrowOut } from "@/components/icons";
 import { ExternalLink } from "@/components/external-link";
@@ -15,6 +16,15 @@ export async function About() {
     <section id="about" aria-labelledby="about-title" className="scroll-mt-16 border-t border-line">
       <div className="mx-auto flex max-w-page flex-wrap gap-14 px-6 py-28">
         <div className="flex min-w-0 flex-[999_1_520px] flex-col gap-5">
+          {profile.photo && (
+            <Image
+              src={profile.photo}
+              alt={t("photoAlt")}
+              width={112}
+              height={112}
+              className="size-28 rounded-full border border-line bg-sunken object-cover"
+            />
+          )}
           <Eyebrow>{t("eyebrow")}</Eyebrow>
           <LocalizedText
             as="h2"

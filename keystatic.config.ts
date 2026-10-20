@@ -94,6 +94,22 @@ export default config({
           publicPath: "/images/projects/",
         }),
         imageAlt: localized("Screenshot description", { required: false }),
+        screenshots: fields.array(
+          fields.object({
+            image: fields.image({
+              label: "Image",
+              directory: "public/images/projects",
+              publicPath: "/images/projects/",
+              validation: { isRequired: true },
+            }),
+            alt: localized("Description"),
+          }),
+          {
+            label: "App screens",
+            description: "Phone screenshots, shown in a scrolling strip on the case study page.",
+            itemLabel: (props) => props.fields.alt.fields.en.value || "Screen",
+          },
+        ),
       },
     }),
 
@@ -161,6 +177,12 @@ export default config({
       path: "content/profile",
       format: { data: "yaml" },
       schema: {
+        photo: fields.image({
+          label: "Photo",
+          description: "Square, shown round in the header and in About.",
+          directory: "public/images/profile",
+          publicPath: "/images/profile/",
+        }),
         heroTitle: localized("Hero headline"),
         heroAccent: localized("Hero headline — highlighted ending"),
         heroDescription: localized("Hero description", { multiline: true }),

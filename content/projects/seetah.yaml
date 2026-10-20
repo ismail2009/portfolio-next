@@ -1,7 +1,7 @@
 title: Seetah
 visible: true
 featured: false
-caseStudy: false
+caseStudy: true
 order: 15
 category:
   en: React Native · iOS + Android
@@ -43,3 +43,32 @@ image: /images/projects/seetah/image.png
 imageAlt:
   en: Seetah logo
   ar: شعار Seetah
+screenshots:
+  - image: /images/projects/seetah/screens/1.webp
+    alt:
+      en: Seetah home screen with the award guide banner and the About Award section
+      ar: الشاشة الرئيسية في Seetah مع إعلان دليل الجائزة وقسم عن الجائزة
+  - image: /images/projects/seetah/screens/2.webp
+    alt:
+      en: The award branches, each with a button to submit an application
+      ar: فروع الجائزة مع زر لتقديم الطلب في كل فرع
+  - image: /images/projects/seetah/screens/3.webp
+    alt:
+      en: About the prize, with how the award was established, its vision and its mission
+      ar: عن الجائزة، مع نبذة عن تأسيسها ورؤيتها ورسالتها
+  - image: /images/projects/seetah/screens/4.webp
+    alt:
+      en: The prize components and how winners are announced
+      ar: مكونات الجائزة وطريقة إعلان الفائزين
+  - image: /images/projects/seetah/screens/5.webp
+    alt:
+      en: Nomination conditions, the target group and the button to apply
+      ar: شروط الترشيح والفئة المستهدفة وزر التقديم
+  - image: /images/projects/seetah/screens/6.webp
+    alt:
+      en: Application list with a star rating prompt for the service
+      ar: قائمة الطلبات مع نافذة لتقييم الخدمة بالنجوم
+  - image: /images/projects/seetah/screens/7.webp
+    alt:
+      en: Language picker for switching the app between Arabic and English
+      ar: اختيار اللغة للتبديل بين العربية والإنجليزية
