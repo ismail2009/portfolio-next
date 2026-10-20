@@ -1,6 +1,10 @@
 # Ismail Al-Saleh — portfolio
 
+[![CI](https://github.com/ismail2009/portfolio-next/actions/workflows/ci.yml/badge.svg)](https://github.com/ismail2009/portfolio-next/actions/workflows/ci.yml)
+
 Personal portfolio of a senior frontend and mobile developer, in English and Arabic.
+
+**Design:** [Portfolio Redesign artboards](https://claude.ai/artifact/Sp2Fnw5ea7J3mXppVgNbC7)
 
 **Live:** https://ismail-alsaleh.vercel.app ([English](https://ismail-alsaleh.vercel.app/en) · [العربية](https://ismail-alsaleh.vercel.app/ar))
 
@@ -9,6 +13,10 @@ Personal portfolio of a senior frontend and mobile developer, in English and Ara
 - Content edited in [Keystatic](https://keystatic.com); each save is a Git commit
 - Tailwind CSS 4, `next/font`, generated Open Graph images
 - Lighthouse: 100 for accessibility, best practices and SEO
+
+| English                                   | العربية                                  |
+| ----------------------------------------- | ---------------------------------------- |
+| ![Home page in English](docs/home-en.png) | ![Home page in Arabic](docs/home-ar.png) |
 
 ## Running it
 
@@ -69,3 +77,11 @@ Dependabot opens weekly npm and monthly GitHub Actions updates. `.github/dependa
 - `@types/node` follows the Node runtime (24), so it moves together with `.node-version`.
 - TypeScript 7 waits until Next.js supports it.
 - ESLint 10 waits until `eslint-config-next` supports it (its React and a11y plugins stop at ESLint 9). This one is ignored through a Dependabot comment on the closed PR rather than in the config file.
+
+## Contact
+
+Use the [contact form](https://ismail-alsaleh.vercel.app/en#contact) on the site, or find me on [LinkedIn](https://www.linkedin.com/in/ismail-alsaleh/).
+
+## License
+
+The code is [MIT](LICENSE). The site content, images and CV are © Ismail Al-Saleh and not covered by the license.
