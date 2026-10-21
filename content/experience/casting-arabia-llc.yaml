@@ -10,7 +10,7 @@ start: 2022-01-01
 end: 2022-07-01
 outcome:
   en: Moved the product to TypeScript and shipped it on web, iOS and Android, with Facebook, LinkedIn and Apple login and OneSignal notifications.
-  ar: نقلت المنتج إلى TypeScript وأطلقته على الويب و iOS و Android، مع تسجيل الدخول عبر Facebook و LinkedIn و Apple وإشعارات OneSignal.
+  ar: أعدت هيكلة المنصة بـ TypeScript وأطلقتها على الويب و iOS و Android، مع تسجيل الدخول عبر Facebook و LinkedIn و Apple وإشعارات OneSignal.
 tags:
   - TypeScript
   - Next.js

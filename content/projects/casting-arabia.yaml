@@ -16,7 +16,7 @@ engagement:
   ar: عقد · كانون الثاني 2022 – تموز 2022
 outcome:
   en: Shipped the casting platform on the web and both app stores, and moved the codebase to TypeScript.
-  ar: أطلقت منصة الكاستنج على الويب وعلى المتجرين، ونقلت الكود إلى TypeScript.
+  ar: أطلقت منصة الكاستنج على الويب وعلى المتجرين، وأعدت هيكلة الكود بـ TypeScript.
 problem:
   en: Talent and agencies in the Arab market needed one casting product across web and mobile. The existing JavaScript codebase was harder to maintain as login providers and screens were added.
   ar: احتاج الممثلون والوكالات في السوق العربي إلى منتج كاستنج واحد على الويب والموبايل. وكان كود JavaScript القائم يصعب صيانته مع إضافة مزوّدي تسجيل الدخول والشاشات الجديدة.
