@@ -10,7 +10,7 @@ start: 2019-06-01
 end: 2019-10-01
 outcome:
   en: Built Plutoo, a nursery app that keeps parents privately updated on their child's day, for Save Youth Future Society, and released it on both stores with Firebase messaging, deep links and performance fixes so it feels native.
-  ar: بنيت تطبيق Plutoo لجمعية Save Youth Future، وهو تطبيق للحضانات يُطلع الأهل بخصوصية على يوم طفلهم، وأطلقته على المتجرين مع رسائل Firebase وروابط عميقة وتحسينات أداء تجعله يعمل بسلاسة التطبيقات الأصلية.
+  ar: بنيت تطبيق Plutoo لجمعية إنقاذ المستقبل الشبابي، وهو تطبيق للحضانات يُطلع الأهالي بخصوصية على يوم طفلهم، وأطلقته على المتجرين مع إشعارات Firebase وروابط عميقة وتحسينات أداء ليعمل بسلاسة التطبيقات الـ Native.
 tags:
   - React Native
   - Redux-Thunk

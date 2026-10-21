@@ -13,33 +13,33 @@ role:
   ar: مطور React Native
 engagement:
   en: Jun 2019 – Oct 2019
-  ar: يونيو 2019 – أكتوبر 2019
+  ar: حزيران 2019 – تشرين الأول 2019
 outcome:
   en: Shipped a nursery app on iOS and Android that keeps parents updated on their child's day, from meals and activities to naps and announcements, privately and without social media.
-  ar: أطلقت تطبيقًا للحضانات على iOS و Android يُطلع الأهل على يوم طفلهم، من الوجبات والأنشطة إلى القيلولة والإعلانات، بخصوصية ودون وسائل التواصل الاجتماعي.
+  ar: أطلقت تطبيقًا للحضانات على iOS و Android يُطلع الأهالي على يوم طفلهم، من الوجبات والأنشطة إلى القيلولة والإعلانات، بخصوصية ودون وسائل التواصل الاجتماعي.
 problem:
   en: Nurseries were updating parents through paper notes, phone calls and social media groups. They needed one private channel where staff post about each child or group, and only that child's parents can see it.
-  ar: كانت الحضانات تتواصل مع الأهل عبر الأوراق والمكالمات ومجموعات التواصل الاجتماعي، واحتاجت إلى قناة خاصة واحدة ينشر فيها المشرفون عن كل طفل أو مجموعة، ولا يراها إلا أهل ذلك الطفل.
+  ar: كانت الحضانات تتواصل مع الأهالي عبر الأوراق والمكالمات ومجموعات التواصل الاجتماعي، واحتاجت إلى قناة خاصة واحدة ينشر فيها المشرفون عن كل طفل أو مجموعة، ولا يراها إلا أهل ذلك الطفل.
 decisions:
   - en: Built two sign-in paths, one for nursery staff and one for parents, who log in with the mobile number registered to their child.
     ar: بنيت مسارين لتسجيل الدخول، واحد لمشرفي الحضانة وآخر لأولياء الأمور الذين يدخلون برقم الجوال المسجّل لطفلهم.
   - en: Let staff post to all groups, one group or selected children, so each update reaches only the right parents.
-    ar: أتحت للمشرفين النشر لكل المجموعات أو لمجموعة واحدة أو لأطفال محددين، ليصل كل تحديث إلى الأهل المعنيين فقط.
+    ar: أتحت للمشرفين النشر لكل المجموعات أو لمجموعة واحدة أو لأطفال محددين، ليصل كل تحديث إلى الأهالي المعنيين فقط.
   - en: Kept parents' comments private between that child's parents, the supervisor and the nursery admin.
-    ar: جعلت تعليقات الأهل خاصة بين أهل الطفل والمشرف وإدارة الحضانة فقط.
+    ar: جعلت تعليقات الأهالي خاصة بين أهل الطفل والمشرف وإدارة الحضانة فقط.
   - en: Built pixel-perfect, smooth UIs on both platforms from one React Native and Redux-Thunk codebase, using native APIs where needed.
-    ar: بنيت واجهات دقيقة وسلسة على المنصتين من كود واحد بـ React Native و Redux-Thunk، مع واجهات البرمجة الأصلية عند الحاجة.
+    ar: بنيت واجهات دقيقة وسلسة على المنصتين من كود واحد بـ React Native و Redux-Thunk، مع استخدام الـ Native APIs عند الحاجة.
   - en: Added Firebase Cloud Messaging push notifications and deep links, and fixed performance bottlenecks so the app felt native.
-    ar: أضفت إشعارات Firebase Cloud Messaging والروابط العميقة، وأصلحت نقاط بطء الأداء ليبدو التطبيق أصليًا.
+    ar: أضفت إشعارات Firebase Cloud Messaging والروابط العميقة، وأصلحت نقاط بطء الأداء ليعمل بسلاسة التطبيقات الـ Native.
 shipped:
   - en: Released on Google Play and the App Store
     ar: أُطلق على Google Play و App Store
   - en: Posts for updates, announcements, attendance, pickups and payments
-    ar: منشورات للتحديثات والإعلانات والحضور والتسليم والحركات المالية
+    ar: منشورات للتحديثات والإعلانات والحضور واستلام الأطفال والدفعات
   - en: Private comments between parents and staff
-    ar: تعليقات خاصة بين الأهل والمشرفين
+    ar: تعليقات خاصة بين الأهالي والمشرفين
   - en: Push notifications and deep links
-    ar: إشعارات وروابط عميقة
+    ar: إشعارات فورية وروابط عميقة
 metric:
   en: Released on both stores
   ar: أُطلق على المتجرين

@@ -6,7 +6,7 @@ import { localize, type Project } from "@/lib/content";
 
 export function ProjectMeta({ project, locale }: { project: Project; locale: string }) {
   return (
-    <p className="m-0 font-mono text-[13px] text-muted">
+    <p className="m-0 font-mono text-[13px] text-muted rtl:font-sans">
       <LocalizedText value={project.category} locale={locale} /> · <bdi>{project.year}</bdi>
     </p>
   );

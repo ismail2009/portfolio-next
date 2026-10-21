@@ -13,7 +13,7 @@ role:
   ar: مطور React و React Native
 engagement:
   en: Contract · Jan 2022 – Jul 2022
-  ar: عقد · يناير 2022 – يوليو 2022
+  ar: عقد · كانون الثاني 2022 – تموز 2022
 outcome:
   en: Shipped the casting platform on the web and both app stores, and moved the codebase to TypeScript.
   ar: أطلقت منصة الكاستنج على الويب وعلى المتجرين، ونقلت الكود إلى TypeScript.
@@ -24,9 +24,9 @@ decisions:
   - en: Migrated the codebase from JavaScript to TypeScript to make later changes safer.
     ar: نقلت الكود من JavaScript إلى TypeScript لتصبح التعديلات اللاحقة أكثر أمانًا.
   - en: Built the web UI with Next.js server rendering and Material-UI, deployed it on AWS Amplify and connected the GoDaddy domain.
-    ar: بنيت واجهة الويب بـ Next.js مع العرض من الخادم و Material-UI، ونشرتها على AWS Amplify وربطتها بنطاق GoDaddy.
+    ar: بنيت واجهة الويب بـ Next.js مع العرض من جهة الخادم (SSR) و Material-UI، ونشرتها على AWS Amplify وربطتها بنطاق GoDaddy.
   - en: Added Facebook, LinkedIn and Apple login so candidates could join without a new password.
-    ar: أضفت تسجيل الدخول عبر Facebook و LinkedIn و Apple ليتمكن المرشحون من الانضمام دون كلمة مرور جديدة.
+    ar: أضفت تسجيل الدخول عبر Facebook و LinkedIn و Apple لتنضم المواهب دون إنشاء كلمة مرور جديدة.
   - en: Integrated OneSignal push notifications and fixed API integration bugs across the app.
     ar: دمجت إشعارات OneSignal وأصلحت أخطاء الربط مع الـ API في التطبيق.
   - en: Shipped the same product as a React Native app on Google Play and the App Store.
@@ -39,7 +39,7 @@ shipped:
   - en: Android app on Google Play
     ar: تطبيق Android على Google Play
   - en: TypeScript codebase with social login
-    ar: كود TypeScript مع تسجيل الدخول الاجتماعي
+    ar: كود TypeScript مع تسجيل الدخول بحسابات التواصل الاجتماعي
 metric:
   en: Web + both stores
   ar: الويب + المتجران

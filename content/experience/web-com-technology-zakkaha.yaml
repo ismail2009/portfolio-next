@@ -10,7 +10,7 @@ start: 2021-11-01
 end: 2021-11-01
 outcome:
   en: Joined a partner developer on Zakkaha, an Arabic daily-habits app with prayer times and athkar. Built the profile, leaderboard, sign-up and edit-profile screens, deep linking, and background push notifications on iOS and Android. Released on Google Play.
-  ar: انضممت إلى مطور شريك في تطبيق Zakkaha، وهو تطبيق عربي للعادات اليومية يشمل مواقيت الصلاة والأذكار. بنيت شاشات الملف الشخصي ولوحة النتائج والتسجيل وتعديل الملف، والروابط العميقة، والإشعارات في الخلفية على iOS و Android. أُطلق على Google Play.
+  ar: انضممت إلى مطور شريك في تطبيق Zakkaha، وهو تطبيق عربي للعادات اليومية يشمل مواقيت الصلاة والأذكار. بنيت شاشات الملف الشخصي ولوحة المتصدرين والتسجيل وتعديل الملف، والروابط العميقة، والإشعارات الفورية حتى والتطبيق في الخلفية على iOS و Android. أُطلق على Google Play.
 tags:
   - React Native
   - Redux

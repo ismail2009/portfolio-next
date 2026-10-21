@@ -1,12 +1,13 @@
 import { getTranslations } from "next-intl/server";
-import { Check } from "@/components/icons";
+import { ArrowOut, Check } from "@/components/icons";
 import { ExternalLink } from "@/components/external-link";
 import { Eyebrow, SectionTitle } from "@/components/section-heading";
-import { getSettings } from "@/lib/content";
+import { getPublicSocials, getSettings } from "@/lib/content";
 
 export async function Services() {
   const t = await getTranslations("Services");
-  const settings = await getSettings();
+  const [settings, socials] = await Promise.all([getSettings(), getPublicSocials()]);
+  const upwork = socials.find((social) => social.platform === "Upwork");
 
   return (
     <section
@@ -21,7 +22,7 @@ export async function Services() {
 
       <div className="grid grid-cols-[repeat(auto-fit,minmax(min(320px,100%),1fr))] gap-6">
         <article className="flex flex-col gap-5 rounded-card border border-line bg-surface p-8 md:p-10">
-          <p className="m-0 font-mono text-[13px] text-muted">{t("role.audience")}</p>
+          <p className="m-0 font-mono text-[13px] text-muted rtl:font-sans">{t("role.audience")}</p>
           <h3 className="m-0 font-display text-[32px] font-extrabold tracking-[-0.025em]">
             {t("role.title")}
           </h3>
@@ -36,7 +37,7 @@ export async function Services() {
         </article>
 
         <article className="flex flex-col gap-5 rounded-card bg-ink p-8 text-night-text md:p-10">
-          <p className="m-0 font-mono text-[13px] text-night-muted">{t("build.audience")}</p>
+          <p className="m-0 font-mono text-[13px] text-night-muted rtl:font-sans">{t("build.audience")}</p>
           <h3 className="m-0 font-display text-[32px] font-extrabold tracking-[-0.025em] text-white">
             {t("build.title")}
           </h3>
@@ -46,6 +47,18 @@ export async function Services() {
             className="text-[#c9ccd2]"
             checkClassName="text-accent-night"
           />
+          {upwork && (
+            <ExternalLink
+              href={upwork.url}
+              className="inline-flex items-center gap-2 self-start rounded-lg border border-[#343842] px-3 py-2 text-[14px] font-semibold text-white hover:border-accent-night"
+            >
+              <span aria-hidden="true" className="text-accent-night">
+                ★
+              </span>
+              {t("build.upwork")}
+              <ArrowOut />
+            </ExternalLink>
+          )}
           {settings.calendly && (
             <ExternalLink
               href={settings.calendly}

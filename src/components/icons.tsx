@@ -41,6 +41,25 @@ export function ArrowOut(props: IconProps) {
   );
 }
 
+export function Download(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M12 4v11" />
+      <path d="M7 10l5 5 5-5" />
+      <path d="M5 20h14" />
+    </Icon>
+  );
+}
+
+export function Calendar(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <rect x="4" y="5" width="16" height="15" rx="2" />
+      <path d="M8 3v4M16 3v4M4 10h16" />
+    </Icon>
+  );
+}
+
 export function Check(props: IconProps) {
   return (
     <Icon size={16} {...props}>

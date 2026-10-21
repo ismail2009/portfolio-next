@@ -70,14 +70,14 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
           as="h1"
           value={project.outcome}
           locale={locale}
-          className="m-0 max-w-[980px] font-display text-[clamp(38px,5.4vw,68px)] leading-[1.04] font-extrabold tracking-[-0.035em] rtl:leading-[1.25]"
+          className="m-0 max-w-[980px] font-display text-[clamp(38px,5.4vw,68px)] leading-[1.04] font-extrabold tracking-[-0.035em]"
         />
 
         {facts.length > 0 && (
           <dl className="m-0 grid grid-cols-[repeat(auto-fit,minmax(min(200px,100%),1fr))] border-t border-line">
             {facts.map((fact) => (
               <div key={fact.label} className="flex flex-col gap-1 pe-5 pt-5">
-                <dt className="font-mono text-[12.5px] tracking-[0.06em] text-muted uppercase">
+                <dt className="font-mono text-[12.5px] tracking-[0.06em] text-muted uppercase rtl:font-sans">
                   {fact.label}
                 </dt>
                 <dd className="m-0 font-semibold">
@@ -181,7 +181,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
           <div className="sticky top-24 flex flex-col gap-6 rounded-[22px] border border-line bg-surface p-7">
             {project.role.en && (
               <div className="flex flex-col gap-1">
-                <p className="m-0 font-mono text-[12.5px] tracking-[0.06em] text-muted uppercase">
+                <p className="m-0 font-mono text-[12.5px] tracking-[0.06em] text-muted uppercase rtl:font-sans">
                   {t("role")}
                 </p>
                 <LocalizedText value={project.role} locale={locale} className="font-semibold" />
@@ -195,7 +195,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
               </div>
             )}
             <div className="flex flex-col gap-2.5">
-              <p className="m-0 font-mono text-[12.5px] tracking-[0.06em] text-muted uppercase">
+              <p className="m-0 font-mono text-[12.5px] tracking-[0.06em] text-muted uppercase rtl:font-sans">
                 {t("stack")}
               </p>
               <Stack items={project.stack} />
@@ -221,7 +221,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
           <div className="mx-auto flex max-w-page flex-col gap-8 px-6 py-24">
             <h2
               id="case-more"
-              className="m-0 font-mono text-[13px] font-normal tracking-[0.08em] text-accent-night uppercase"
+              className="m-0 font-mono text-[13px] font-normal tracking-[0.08em] text-accent-night uppercase rtl:font-sans"
             >
               {t("more")}
             </h2>
@@ -235,7 +235,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
                     <LocalizedText
                       value={item.category}
                       locale={locale}
-                      className="font-mono text-[13px] text-night-muted"
+                      className="font-mono text-[13px] text-night-muted rtl:font-sans"
                     />
                     <span className="flex items-center gap-2 font-display text-[30px] font-extrabold tracking-[-0.025em] text-white">
                       <span lang="en">{item.title}</span>

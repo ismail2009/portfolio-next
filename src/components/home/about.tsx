@@ -47,7 +47,7 @@ export async function About() {
           </ul>
 
           <div className="mt-2 border-t border-line pt-5 text-[15px]">
-            <p className="m-0 font-mono text-[12.5px] tracking-[0.06em] text-muted uppercase">
+            <p className="m-0 font-mono text-[12.5px] tracking-[0.06em] text-muted uppercase rtl:font-sans">
               {t("education")}
             </p>
             <p className="m-0 mt-1.5">
@@ -88,7 +88,7 @@ export async function About() {
             />
             <figcaption className="flex flex-wrap items-center justify-between gap-3 border-t border-line pt-5">
               <span>
-                <strong className="block" lang="en">
+                <strong className="block" lang="en" dir="ltr">
                   {testimonial.name}
                 </strong>
                 <LocalizedText value={testimonial.role} locale={locale} className="text-[15px] text-muted" />

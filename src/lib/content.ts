@@ -15,6 +15,20 @@ export function localize(value: Localized, locale: string) {
   return locale === "ar" && value.ar ? value.ar : value.en;
 }
 
+/**
+ * In Arabic, "و", "الـ", "بـ" and "لـ" are written apart from a following Latin word
+ * ("React و React Native", "بـ Next.js"), so a line can break right after them and leave
+ * them alone at the line end. A no-break space keeps them with the next word; the same
+ * goes for "+" in "iOS + Android".
+ */
+const NO_BREAK_SPACE = String.fromCharCode(0xa0);
+
+export function arabicSpacing(text: string) {
+  return text
+    .replace(/(^|\s)(و|الـ|بـ|لـ) (?=[A-Za-z0-9])/g, `$1$2${NO_BREAK_SPACE}`)
+    .replace(/ \+ /g, `${NO_BREAK_SPACE}+${NO_BREAK_SPACE}`);
+}
+
 /** The language a localized value actually renders in, for `lang`/`dir` on fallback text. */
 export function renderedLang(value: Localized, locale: string) {
   return locale === "ar" && value.ar ? "ar" : "en";

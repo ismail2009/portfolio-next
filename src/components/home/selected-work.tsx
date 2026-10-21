@@ -38,7 +38,7 @@ export async function SelectedWork() {
 
       {alsoShipped.length > 0 && (
         <div className="mt-10 flex flex-wrap items-baseline gap-x-6 gap-y-2 border-t border-line pt-6">
-          <p className="m-0 font-mono text-[13px] tracking-[0.08em] text-muted uppercase">
+          <p className="m-0 font-mono text-[13px] tracking-[0.08em] text-muted uppercase rtl:font-sans">
             {t("alsoShipped")}
           </p>
           <ul className="m-0 flex list-none flex-wrap gap-x-6 gap-y-2 p-0">

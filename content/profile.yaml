@@ -1,7 +1,7 @@
 photo: /images/profile/photo.webp
 heroTitle:
   en: I ship React and React Native products people
-  ar: أبني منتجات React و React Native
+  ar: أبني تطبيقات React و React Native
 heroAccent:
   en: actually download.
   ar: يحمّلها الناس فعلًا.
@@ -11,9 +11,9 @@ heroDescription:
     teams and Arabic-market clients — from TypeScript migrations to apps live on
     the App Store and Google Play.
   ar: >-
-    مطور واجهات وتطبيقات موبايل أول. خمس سنوات من العمل الإنتاجي لفرق أوروبية
-    وعملاء في السوق العربي — من التحويل إلى TypeScript حتى تطبيقات منشورة على
-    App Store و Google Play.
+    مطور واجهات أمامية وتطبيقات موبايل سينيور. خمس سنوات من العمل على تطبيقات
+    حقيقية لفرق أوروبية وعملاء في العالم العربي — من تحويل المشاريع إلى TypeScript
+    حتى نشر التطبيقات على App Store و Google Play.
 shipLog:
   - when: '2025'
     what:
@@ -58,7 +58,7 @@ metrics:
   - value: 5+
     label:
       en: Years shipping React products
-      ar: سنوات في تسليم منتجات React
+      ar: سنوات في تسليم تطبيقات React
   - value: 7+
     label:
       en: Apps on App Store and Google Play
@@ -70,10 +70,10 @@ metrics:
   - value: EN / AR
     label:
       en: Delivery languages
-      ar: لغات التسليم
+      ar: لغات العمل
 aboutTitle:
   en: A product engineer who cares about the release, not just the commit.
-  ar: مهندس منتجات يهتم بالإصدار، لا بالكود فقط.
+  ar: مهندس منتجات يهتم بالإطلاق والوصول للمستخدم، لا بمجرد رفع الكود.
 aboutBody:
   en: >-
     I worked my way through a Computer Science degree at Al-Azhar University,
@@ -84,12 +84,12 @@ aboutBody:
     Arabic-market clients, in English and Arabic, and I finished my degree
     part-time alongside the work in 2026.
   ar: >-
-    عملت إلى جانب دراستي لعلوم الحاسوب في جامعة الأزهر في غزة. في سنتي الثالثة
-    التحقت بمعسكر البرمجة في Gaza Sky Geeks، ثم بقيت فيه مرشدًا، وحصلت على أول
-    عمل مدفوع على منتج حقيقي عبر برنامج Tech for Better ضمن فريق موزّع بين لندن
-    وغزة. ومنذ ذلك الحين قضيت خمس سنوات في تسليم منتجات React و React Native
-    لفرق أوروبية وعملاء في السوق العربي، بالعربية والإنجليزية، وأنهيت دراستي
-    بدوام جزئي إلى جانب العمل في 2026.
+    درست علوم الحاسوب في جامعة الأزهر بغزة وأنا أعمل إلى جانب دراستي. في سنتي
+    الثالثة التحقت بمعسكر البرمجة في Gaza Sky Geeks، ثم بقيت فيه مرشدًا، وكان أول
+    عمل مدفوع لي على منتج حقيقي عبر برنامج Tech for Better، ضمن فريق موزّع بين
+    لندن وغزة. ومنذ ذلك الحين أمضيت خمس سنوات أطوّر وأطلق تطبيقات React و React
+    Native لفرق أوروبية وعملاء في العالم العربي، بالعربية والإنجليزية، وأكملت
+    دراستي إلى جانب العمل حتى تخرّجت عام 2026.
 tools:
   - React
   - Next.js
@@ -171,13 +171,13 @@ education:
 training:
   - title:
       en: Full-Time Training Program on Full-Stack JavaScript Web Development
-      ar: برنامج تدريبي بدوام كامل في تطوير الويب المتكامل بـ JavaScript
+      ar: برنامج تدريبي بدوام كامل في تطوير الويب Full-Stack بـ JavaScript
     organization:
       en: Gaza Sky Geeks · Founders and Coders, London
       ar: Gaza Sky Geeks · Founders and Coders، لندن
     dates:
       en: Nov 2017 – Apr 2018
-      ar: نوفمبر 2017 – أبريل 2018
+      ar: تشرين الثاني 2017 – نيسان 2018
   - title:
       en: Freelance and Social Media Marketing
       ar: العمل الحر والتسويق عبر وسائل التواصل الاجتماعي
@@ -186,7 +186,7 @@ training:
       ar: Gaza Sky Geeks، غزة
     dates:
       en: May 2018 – Jul 2018
-      ar: مايو 2018 – يوليو 2018
+      ar: أيار 2018 – تموز 2018
   - title:
       en: Competency-Based Training on Web Applications Development
       ar: تدريب قائم على الكفاءات في تطوير تطبيقات الويب
@@ -195,7 +195,7 @@ training:
       ar: مركز الكفاءات في قطاع تكنولوجيا المعلومات، غزة
     dates:
       en: Nov 2016 – Dec 2016
-      ar: نوفمبر 2016 – ديسمبر 2016
+      ar: تشرين الثاني 2016 – كانون الأول 2016
   - title:
       en: Professional Ethical Hacker
       ar: الاختراق الأخلاقي الاحترافي
@@ -204,4 +204,4 @@ training:
       ar: شركة Guidance للاستشارات والتدريب، غزة
     dates:
       en: Aug 2016 – Oct 2016
-      ar: أغسطس 2016 – أكتوبر 2016
+      ar: آب 2016 – تشرين الأول 2016

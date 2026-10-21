@@ -10,7 +10,7 @@ start: 2019-10-01
 end: 2020-01-01
 outcome:
   en: Hired after a one-month training. Improved an inventory web app used by car dealerships, fixing defects reported by QA and users, and built reusable React components from prototypes.
-  ar: انضممت بعد تدريب لمدة شهر. حسّنت تطبيق ويب لإدارة المخزون تستخدمه معارض السيارات، وأصلحت الأخطاء التي رصدها فريق الاختبار والمستخدمون، وبنيت مكونات React قابلة لإعادة الاستخدام من النماذج الأولية.
+  ar: انضممت للفريق بعد تدريب لمدة شهر. حسّنت تطبيق ويب لإدارة المخزون تستخدمه معارض السيارات، وأصلحت الأخطاء التي رصدها فريق الاختبار (QA) والمستخدمون، وحوّلت النماذج الأولية (Prototypes) إلى مكونات React قابلة لإعادة الاستخدام.
 tags:
   - React
   - MobX-state-tree

@@ -43,13 +43,9 @@
     @apply bg-ground font-sans text-[17px] leading-relaxed text-ink antialiased;
   }
 
-  /* Arabic reads better without negative tracking and with a little more line height. */
+  /* Arabic reads better with a little more line height. */
   [dir="rtl"] body {
     line-height: 1.8;
-  }
-
-  [dir="rtl"] :is(h1, h2, h3) {
-    letter-spacing: 0;
   }
 
   :focus-visible {
@@ -69,4 +65,16 @@
       transition-duration: 0.01ms !important;
     }
   }
+}
+
+/* Arabic headings need room for dots and descenders between lines. Letter spacing in
+   either direction pulls joined Arabic letters apart, so it is off for all Arabic text
+   (English inside the page, marked lang="en", keeps it). These sit outside any layer so
+   they override the leading-[…] and tracking-[…] utilities, which a base-layer rule cannot. */
+[dir="rtl"] :is(h1, h2, h3) {
+  line-height: 1.4;
+}
+
+[dir="rtl"] :not(:lang(en)) {
+  letter-spacing: 0;
 }

@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from "next-intl/server";
-import { ArrowForward } from "@/components/icons";
+import { ArrowForward, Calendar, Download } from "@/components/icons";
 import { ExternalLink } from "@/components/external-link";
 import { LocalizedText } from "@/components/localized-text";
 import { getProfile, getSettings } from "@/lib/content";
@@ -22,7 +22,7 @@ export async function Hero() {
 
         <h1
           id="hero-title"
-          className="m-0 font-display text-[clamp(44px,6vw,80px)] leading-[0.98] font-extrabold tracking-[-0.035em] rtl:leading-[1.15]"
+          className="m-0 font-display text-[clamp(44px,6vw,80px)] leading-[0.98] font-extrabold tracking-[-0.035em]"
         >
           <LocalizedText value={profile.heroTitle} locale={locale} />{" "}
           <LocalizedText value={profile.heroAccent} locale={locale} className="text-accent" />
@@ -35,7 +35,17 @@ export async function Hero() {
           className="m-0 max-w-[560px] text-[19px] text-body"
         />
 
+        {/* Booking is the main action (blue, like the header's button); the CV is a full button too. */}
         <div className="flex flex-wrap gap-3">
+          {settings.calendly && (
+            <ExternalLink
+              href={settings.calendly}
+              className="flex h-13 items-center gap-2.5 rounded-xl bg-accent px-6 font-semibold text-white shadow-[0_12px_24px_-12px_rgba(43,75,242,0.6)] hover:bg-ink"
+            >
+              <Calendar />
+              {t("ctaBook")}
+            </ExternalLink>
+          )}
           <a
             href="#work"
             className="flex h-13 items-center gap-2.5 rounded-xl bg-ink px-6 font-semibold text-white hover:bg-accent"
@@ -43,19 +53,12 @@ export async function Hero() {
             {t("ctaWork")}
             <ArrowForward />
           </a>
-          {settings.calendly && (
-            <ExternalLink
-              href={settings.calendly}
-              className="flex h-13 items-center rounded-xl border border-line-strong bg-surface px-6 font-semibold hover:border-ink"
-            >
-              {t("ctaBook")}
-            </ExternalLink>
-          )}
           {settings.cvUrl && (
             <a
               href={settings.cvUrl}
-              className="flex h-13 items-center px-2 font-semibold underline underline-offset-4 hover:text-accent"
+              className="flex h-13 items-center gap-2.5 rounded-xl border-2 border-ink bg-surface px-6 font-semibold hover:border-accent hover:text-accent"
             >
+              <Download />
               {t("ctaCv")}
             </a>
           )}

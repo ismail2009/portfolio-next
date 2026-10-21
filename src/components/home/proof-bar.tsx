@@ -14,13 +14,16 @@ export async function ProofBar() {
           <div key={metric.value} className="flex flex-col-reverse gap-1 py-7 pe-6">
             <LocalizedText as="dt" value={metric.label} locale={locale} className="text-[15px] text-muted" />
             <dd className="m-0 font-display text-[44px] leading-none font-semibold tracking-[-0.03em]">
-              <bdi>{metric.value}</bdi>
+              {/* Arabic writes "more than 7" as +7, with the plus first. */}
+              <bdi>{locale === "ar" ? metric.value.replace(/^(\d+)\+$/, "+$1") : metric.value}</bdi>
             </dd>
           </div>
         ))}
       </dl>
       <div className="flex flex-wrap items-center gap-x-9 gap-y-3 pt-7">
-        <p className="m-0 font-mono text-[13px] tracking-[0.08em] text-muted uppercase">{t("shippedFor")}</p>
+        <p className="m-0 font-mono text-[13px] tracking-[0.08em] text-muted uppercase rtl:font-sans">
+          {t("shippedFor")}
+        </p>
         <ul className="m-0 flex list-none flex-wrap gap-x-9 gap-y-3 p-0">
           {profile.clients.map((client) => (
             <li

@@ -13,13 +13,13 @@ role:
   ar: مطور React Native
 engagement:
   en: Aug 2020 – Sep 2020
-  ar: أغسطس 2020 – سبتمبر 2020
+  ar: آب 2020 – أيلول 2020
 outcome:
   en: Built and released the Seetah app, connected to a Laravel API with Redux Saga and Firebase notifications.
   ar: بنيت تطبيق Seetah وأطلقته، مربوطًا بـ API مبني على Laravel مع Redux Saga وإشعارات Firebase.
 problem:
   en: The team needed a reliable, smooth mobile app on top of an existing PHP Laravel backend.
-  ar: احتاج الفريق إلى تطبيق موبايل سلس وموثوق فوق خادم PHP Laravel قائم.
+  ar: احتاج الفريق إلى تطبيق موبايل سلس وموثوق، مربوط بباك إند PHP Laravel قائم.
 decisions: []
 shipped: []
 metric:

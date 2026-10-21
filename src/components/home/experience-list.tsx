@@ -1,6 +1,6 @@
-import { getFormatter, getLocale, getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { ArrowForward } from "@/components/icons";
+import { ArrowForward, Download } from "@/components/icons";
 import { LocalizedText } from "@/components/localized-text";
 import { Eyebrow, SectionTitle } from "@/components/section-heading";
 import { getExperience, getSettings } from "@/lib/content";
@@ -10,17 +10,17 @@ export async function ExperienceList() {
   const locale = await getLocale();
   const t = await getTranslations("Experience");
   const common = await getTranslations("Common");
-  const format = await getFormatter();
   const [entries, settings] = await Promise.all([getExperience(), getSettings()]);
 
+  // Arabic uses the Levantine month names (كانون الثاني، شباط…) as written in Palestine.
   // Latin digits in both languages, matching the rest of the site.
-  const month = (date: string) =>
-    format.dateTime(new Date(`${date}T00:00:00Z`), {
-      month: "short",
-      year: "numeric",
-      timeZone: "UTC",
-      numberingSystem: "latn",
-    });
+  const dates = new Intl.DateTimeFormat(locale === "ar" ? "ar-PS" : locale, {
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+    numberingSystem: "latn",
+  });
+  const month = (date: string) => dates.format(new Date(`${date}T00:00:00Z`));
 
   return (
     <section
@@ -37,8 +37,9 @@ export async function ExperienceList() {
             {settings.cvUrl && (
               <a
                 href={settings.cvUrl}
-                className="flex h-12 items-center self-start rounded-xl border border-[#3a3f48] px-5 text-[15px] font-semibold text-white hover:border-white"
+                className="flex h-12 items-center gap-2.5 self-start rounded-xl bg-white px-5 text-[15px] font-semibold text-ink hover:bg-accent-night"
               >
+                <Download />
                 {t("cv")}
               </a>
             )}
@@ -49,8 +50,16 @@ export async function ExperienceList() {
           {entries.map((entry) => (
             <li key={entry.slug} className="flex flex-wrap gap-x-8 gap-y-2 border-t border-night-line py-8">
               <div className="flex flex-[1_1_160px] flex-col gap-1">
-                <span className="font-mono text-[13px] text-accent-night">
-                  {entry.start && month(entry.start)} – {entry.end ? month(entry.end) : t("present")}
+                {/* Each date stays on one line (Arabic month names like تشرين الأول are two words);
+                    a role that starts and ends in the same month shows that month once. */}
+                <span className="font-mono text-[13px] text-accent-night rtl:font-sans">
+                  {entry.start && <span className="whitespace-nowrap">{month(entry.start)}</span>}
+                  {entry.end !== entry.start && (
+                    <>
+                      {" – "}
+                      <span className="whitespace-nowrap">{entry.end ? month(entry.end) : t("present")}</span>
+                    </>
+                  )}
                 </span>
                 <LocalizedText value={entry.type} locale={locale} className="text-sm text-night-muted" />
               </div>

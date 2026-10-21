@@ -10,7 +10,7 @@ start: 2020-08-01
 end: 2020-09-01
 outcome:
   en: Built and released the Seetah award app on the App Store and Google Play, on a Laravel API with Redux Saga and Firebase notifications.
-  ar: بنيت تطبيق جائزة Seetah وأطلقته على App Store و Google Play، فوق API مبني على Laravel مع Redux Saga وإشعارات Firebase.
+  ar: بنيت تطبيق جائزة Seetah وأطلقته على App Store و Google Play، مربوطًا بـ API مبني على Laravel مع Redux Saga وإشعارات Firebase.
 tags:
   - React Native
   - Redux Saga

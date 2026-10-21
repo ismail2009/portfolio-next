@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 export function Eyebrow({ children, tone = "light" }: { children: ReactNode; tone?: "light" | "dark" }) {
   return (
     <p
-      className={`m-0 font-mono text-[13px] tracking-[0.08em] uppercase ${tone === "dark" ? "text-accent-night" : "text-accent"}`}
+      className={`m-0 font-mono text-[13px] tracking-[0.08em] uppercase rtl:font-sans ${tone === "dark" ? "text-accent-night" : "text-accent"}`}
     >
       {children}
     </p>

@@ -13,16 +13,16 @@ role:
   ar: مطور Full Stack JavaScript
 engagement:
   en: Full-time · Sep 2022 – Oct 2023
-  ar: دوام كامل · سبتمبر 2022 – أكتوبر 2023
+  ar: دوام كامل · أيلول 2022 – تشرين الأول 2023
 outcome:
   en: Upgraded the React Native app and added Stripe wallet payments plus in-app purchases.
-  ar: رقّيت تطبيق React Native وأضفت الدفع عبر محافظ Stripe والمشتريات داخل التطبيق.
+  ar: حدّثت تطبيق React Native وأضفت الدفع بالمحافظ الرقمية عبر Stripe والمشتريات داخل التطبيق.
 problem:
   en: The live app needed a safer dependency upgrade and more ways for users to pay, without breaking it for existing users.
   ar: احتاج التطبيق المنشور إلى ترقية آمنة للمكتبات وطرق دفع أكثر للمستخدمين، دون أن يتعطّل لمن يستخدمونه حاليًا.
 decisions:
   - en: Upgraded the React Native version and updated libraries for performance and security.
-    ar: رقّيت إصدار React Native وحدّثت المكتبات لتحسين الأداء والأمان.
+    ar: حدّثت إصدار React Native والمكتبات لتحسين الأداء والأمان.
   - en: Integrated Google Pay and Apple Pay through the Stripe gateway.
     ar: دمجت Google Pay و Apple Pay عبر بوابة Stripe.
   - en: Set up in-app purchases as an additional revenue stream.
@@ -31,7 +31,7 @@ decisions:
     ar: أضفت Google Analytics ليرى الفريق كيف يستخدم الناس التطبيق فعليًا.
 shipped:
   - en: Upgraded React Native app in the stores
-    ar: تطبيق React Native مُرقّى على المتاجر
+    ar: نسخة محدّثة من التطبيق على المتاجر
   - en: Stripe Google Pay and Apple Pay
     ar: الدفع عبر Google Pay و Apple Pay من خلال Stripe
   - en: In-app purchase flow
@@ -40,7 +40,7 @@ shipped:
     ar: تحليلات تدعم قرارات المنتج
 metric:
   en: Payments shipped
-  ar: نظام دفع منشور
+  ar: الدفع الإلكتروني مُفعّل
 stack:
   - React Native
   - TypeScript

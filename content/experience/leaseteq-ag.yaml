@@ -10,7 +10,7 @@ start: 2025-07-01
 end: 2025-08-01
 outcome:
   en: "Short contract on a live Next.js product: built front-end and back-end features, responsive Tailwind CSS components and high-priority fixes, using an AI-assisted workflow (Cursor) to ship faster."
-  ar: "عقد قصير على منتج Next.js يعمل: بنيت ميزات للواجهة والخادم، ومكونات متجاوبة بـ Tailwind CSS، وإصلاحات عالية الأولوية، مع سير عمل مدعوم بالذكاء الاصطناعي (Cursor) لتسريع التسليم."
+  ar: "عقد قصير على منتج Next.js قيد التشغيل: طوّرت ميزات للواجهة الأمامية والباك إند، ومكونات متجاوبة بـ Tailwind CSS، وأصلحت أخطاء ذات أولوية عالية، مستعينًا بأدوات الذكاء الاصطناعي (Cursor) لتسريع التسليم."
 tags:
   - Next.js
   - React

@@ -13,10 +13,10 @@ role:
   ar: مطور Full-Stack JavaScript
 engagement:
   en: Tech for Better · Dec 2018 – Jan 2019
-  ar: Tech for Better · ديسمبر 2018 – يناير 2019
+  ar: Tech for Better · كانون الأول 2018 – كانون الثاني 2019
 outcome:
   en: Built the MVP of an integrated-wellness platform with a remote team of four in London and Gaza, in three agile sprints.
-  ar: بنيت النسخة الأولى (MVP) من منصة للعافية المتكاملة مع فريق عن بُعد من أربعة في لندن وغزة، خلال ثلاث دورات عمل.
+  ar: بنيت النسخة الأولى (MVP) من منصة للعافية الشاملة مع فريق عن بُعد من أربعة في لندن وغزة، على ثلاثة سبرنتات (Sprints).
 problem:
   en: The founder needed a proof of concept that connects people looking for support with providers across the dimensions of wellness, to show to funders.
   ar: احتاجت المؤسِّسة إلى نموذج أولي يربط الباحثين عن الدعم بمقدّمي الخدمات في مختلف جوانب العافية، لعرضه على الجهات المموّلة.
@@ -24,7 +24,7 @@ decisions:
   - en: Scoped the MVP with the founder over video workshops, keeping only the features she needed to show funders.
     ar: حدّدنا نطاق النسخة الأولى مع المؤسِّسة عبر ورش عمل بالفيديو، واحتفظنا فقط بالميزات التي تحتاجها لعرضها على المموّلين.
   - en: Split the work between London and Gaza into three one-week sprints, tracked on a shared GitHub project board.
-    ar: قسّمنا العمل بين لندن وغزة على ثلاث دورات عمل مدة كل منها أسبوع، وتابعناها على لوحة مشروع مشتركة في GitHub.
+    ar: قسّمنا العمل بين لندن وغزة على ثلاثة سبرنتات مدة كل منها أسبوع، وتابعناها على لوحة مشروع مشتركة في GitHub.
 shipped:
   - en: Sign-up and secure login for support providers, added beyond the agreed scope
     ar: التسجيل وتسجيل دخول آمن لمقدّمي الدعم، أُضيف خارج النطاق المتفق عليه
@@ -34,7 +34,7 @@ shipped:
     ar: مقالات من مقدّمي الدعم، وخطوة موافقة قبل نشر الملفات
 metric:
   en: 430+ commits, 40+ tests
-  ar: أكثر من 430 commit و 40 اختبارًا
+  ar: أكثر من 430 commit وأكثر من 40 اختبارًا
 stack:
   - React
   - Node.js

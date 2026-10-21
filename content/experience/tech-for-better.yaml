@@ -10,7 +10,7 @@ start: 2018-12-01
 end: 2019-01-01
 outcome:
   en: "Built the MVP of MyPickle, an integrated-wellness platform for a UK social enterprise, in a remote team of four: Joe and Simon from Founders & Coders in London, and Haneen and me in Gaza. We planned it with the founder over video workshops, delivered it in three agile sprints, and added secure login beyond the agreed scope. The founder: “The team in London and Gaza were really friendly and I hope to work with them again.”"
-  ar: "بنيت النسخة الأولى (MVP) من MyPickle، منصة للعافية المتكاملة لمؤسسة اجتماعية بريطانية، ضمن فريق عن بُعد من أربعة: Joe و Simon من Founders & Coders في لندن، وحنين وأنا في غزة. خططنا لها مع المؤسِّسة عبر ورش عمل بالفيديو، وسلّمناها في ثلاث دورات عمل (sprints)، وأضفنا تسجيل دخول آمنًا خارج النطاق المتفق عليه. قالت المؤسِّسة: «كان الفريق في لندن وغزة ودودًا جدًا وآمل أن أعمل معهم مجددًا.»"
+  ar: "بنيت النسخة الأولى (MVP) من MyPickle، منصة للعافية الشاملة لمؤسسة اجتماعية بريطانية، ضمن فريق عن بُعد من أربعة: Joe و Simon من Founders & Coders في لندن، وحنين وأنا في غزة. خططنا لها مع المؤسِّسة عبر ورش عمل بالفيديو، وسلّمناها على ثلاثة سبرنتات (Sprints)، وأضفنا تسجيل دخول آمنًا خارج النطاق المتفق عليه. قالت المؤسِّسة: «كان الفريق في لندن وغزة ودودًا جدًا وآمل أن أعمل معهم مجددًا.»"
 tags:
   - React
   - Node.js

@@ -10,7 +10,7 @@ start: 2022-09-01
 end: 2023-10-01
 outcome:
   en: Upgraded the React Native app, shipped Stripe Google Pay and Apple Pay plus in-app purchases, and added Google Analytics for product decisions.
-  ar: رقّيت تطبيق React Native، وأطلقت الدفع عبر Google Pay و Apple Pay من خلال Stripe مع المشتريات داخل التطبيق، وأضفت Google Analytics لدعم قرارات المنتج.
+  ar: حدّثت تطبيق React Native إلى إصدار أحدث، وأضفت الدفع عبر Google Pay و Apple Pay من خلال Stripe والمشتريات داخل التطبيق، وربطت Google Analytics لدعم قرارات المنتج.
 tags:
   - React Native
   - Stripe

@@ -10,7 +10,7 @@ start: 2021-02-01
 end: 2022-06-01
 outcome:
   en: Connected the app to Firebase Auth, Realtime Database and Cloud Storage.
-  ar: ربط التطبيق بمصادقة Firebase وقاعدة البيانات اللحظية و Cloud Storage.
+  ar: ربطت التطبيق بـ Firebase Authentication و Realtime Database و Cloud Storage.
 tags:
   - React Native
   - Firebase
