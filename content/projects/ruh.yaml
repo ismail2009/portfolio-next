@@ -70,3 +70,7 @@ screenshots:
     alt:
       en: Store cover with a user quote about feeling a renewed purpose after a few sessions
       ar: صورة المتجر مع اقتباس من مستخدم عن شعوره بهدف متجدد بعد بضع جلسات
+heroImage: /images/projects/ruh/hero.webp
+heroImageAlt:
+  en: Mood check-in asking how you are feeling today, with a set of emotion faces
+  ar: سؤال عن حالتك المزاجية اليوم مع مجموعة من الوجوه التعبيرية

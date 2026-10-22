@@ -110,6 +110,14 @@ export default config({
             itemLabel: (props) => props.fields.alt.fields.en.value || "Screen",
           },
         ),
+        heroImage: fields.image({
+          label: "Home page phone screen",
+          description:
+            "The bare app screen (no device frame or store caption) shown in the hero phone. Leave empty to leave this project out.",
+          directory: "public/images/projects",
+          publicPath: "/images/projects/",
+        }),
+        heroImageAlt: localized("Home page phone screen — description", { required: false }),
       },
     }),
 
@@ -135,6 +143,23 @@ export default config({
           itemLabel: (props) => props.value,
         }),
         caseStudy: fields.relationship({ label: "Case study", collection: "projects" }),
+        logo: fields.image({
+          label: "Company logo",
+          description:
+            "The company's own logo, shown on a white tile. Without one, the case study's app icon is used.",
+          directory: "public/images/companies",
+          publicPath: "/images/companies/",
+        }),
+        phase: fields.select({
+          label: "Career phase",
+          description: "Experience is grouped into these three stages of the story, newest first.",
+          options: [
+            { label: "Scaling — products in production", value: "scaling" },
+            { label: "Building — shipping apps", value: "building" },
+            { label: "Learning — bootcamp and first product", value: "learning" },
+          ],
+          defaultValue: "building",
+        }),
       },
     }),
 

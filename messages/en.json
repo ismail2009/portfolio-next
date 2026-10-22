@@ -26,7 +26,12 @@
     "ctaBook": "Book a 30-min call",
     "ctaCv": "Download CV",
     "logTitle": "~/ismail/ship.log",
-    "logLabel": "Release history"
+    "logLabel": "Release history",
+    "stages": "Idea → Code → Launch",
+    "phoneLabel": "Screens from apps I built and released",
+    "phoneStores": "Released on the App Store and Google Play",
+    "phoneShow": "Show {name}",
+    "phoneCase": "Read the {name} case"
   },
   "Proof": {
     "label": "At a glance",
@@ -43,7 +48,21 @@
     "title": "Production work, latest first.",
     "lead": "Contracts and full-time roles with teams in Switzerland, the UK and across the Arab market, back to the bootcamp where it started.",
     "cv": "Download full CV",
-    "present": "Present"
+    "present": "Present",
+    "phases": {
+      "scaling": {
+        "title": "Scaling",
+        "lead": "Products in production: payments, TypeScript migrations and live releases."
+      },
+      "building": {
+        "title": "Building",
+        "lead": "Shipping apps to both stores, as a contractor and an employee."
+      },
+      "learning": {
+        "title": "Learning",
+        "lead": "The bootcamp, mentoring the next cohort, and the first paid product."
+      }
+    }
   },
   "Services": {
     "eyebrow": "03 — Work with me",

@@ -82,3 +82,7 @@ screenshots:
     alt:
       en: New post form with type, date and time, text, image and video link
       ar: نموذج منشور جديد مع النوع والتاريخ والوقت والنص والصورة ورابط الفيديو
+heroImage: /images/projects/plutoo/hero.webp
+heroImageAlt:
+  en: A class feed of announcements and posts for parents, with images, author and time
+  ar: منشورات وإعلانات الصف لأولياء الأمور، مع الصور والكاتب والوقت

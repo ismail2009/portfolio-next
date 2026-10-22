@@ -2,12 +2,28 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { ArrowForward, Calendar, Download } from "@/components/icons";
 import { ExternalLink } from "@/components/external-link";
 import { LocalizedText } from "@/components/localized-text";
-import { getProfile, getSettings } from "@/lib/content";
+import { PhoneShowcase, type PhoneSlide } from "@/components/home/phone-showcase";
+import { getCaseStudies, getProfile, getSettings, localize } from "@/lib/content";
 
 export async function Hero() {
   const locale = await getLocale();
   const t = await getTranslations("Hero");
-  const [profile, settings] = await Promise.all([getProfile(), getSettings()]);
+  const [profile, settings, cases] = await Promise.all([getProfile(), getSettings(), getCaseStudies()]);
+
+  // The phone shows one real screen from each released app that has a hero screen.
+  const slides: PhoneSlide[] = cases.flatMap((project) => {
+    if (!project.heroImage) return [];
+    return [
+      {
+        slug: project.slug,
+        name: project.title,
+        src: project.heroImage,
+        alt: localize(project.heroImageAlt, locale),
+        showLabel: t("phoneShow", { name: project.title }),
+        caseLabel: t("phoneCase", { name: project.title }),
+      },
+    ];
+  });
 
   return (
     <section
@@ -65,60 +81,7 @@ export async function Hero() {
         </div>
       </div>
 
-      <ShipLog
-        title={t("logTitle")}
-        label={t("logLabel")}
-        rows={profile.shipLog}
-        summary={profile.shipLogSummary}
-        locale={locale}
-      />
+      <PhoneShowcase label={t("phoneLabel")} stages={t("stages")} stores={t("phoneStores")} slides={slides} />
     </section>
-  );
-}
-
-type ShipLogProps = {
-  title: string;
-  label: string;
-  rows: Awaited<ReturnType<typeof getProfile>>["shipLog"];
-  summary: Awaited<ReturnType<typeof getProfile>>["shipLogSummary"];
-  locale: string;
-};
-
-/** The terminal card is code-flavoured, so it always reads left to right. */
-function ShipLog({ title, label, rows, summary, locale }: ShipLogProps) {
-  return (
-    <figure
-      aria-label={label}
-      className="m-0 min-w-0 flex-[1_1_380px] rounded-[20px] bg-ink p-2 text-night-text shadow-[0_30px_60px_-30px_rgba(17,19,24,0.45)]"
-    >
-      <figcaption
-        className="flex items-center justify-between px-4 py-3 font-mono text-[13px] text-night-muted"
-        dir="ltr"
-      >
-        <span>{title}</span>
-        <span aria-hidden="true" className="flex gap-1.5">
-          <span className="size-2.5 rounded-full bg-[#3a3f48]" />
-          <span className="size-2.5 rounded-full bg-[#3a3f48]" />
-          <span className="size-2.5 rounded-full bg-[#3a3f48]" />
-        </span>
-      </figcaption>
-      <ol className="m-0 flex list-none flex-col gap-4 rounded-[14px] bg-night-raised p-5 font-mono text-[13.5px] leading-[1.55]">
-        {rows.map((row) => (
-          <li key={`${row.when}-${row.what.en}`} className="grid grid-cols-[76px_minmax(0,1fr)] gap-3">
-            <span className="text-accent-night" dir="ltr">
-              {row.when}
-            </span>
-            <span>
-              <LocalizedText value={row.what} locale={locale} className="block font-medium text-white" />
-              <LocalizedText value={row.detail} locale={locale} className="block text-night-muted" />
-            </span>
-          </li>
-        ))}
-        <li className="border-t border-[#2a2e36] pt-3.5 text-night-muted">
-          <span aria-hidden="true">$ </span>
-          <LocalizedText value={summary} locale={locale} className="text-[#6ee7a8]" />
-        </li>
-      </ol>
-    </figure>
   );
 }

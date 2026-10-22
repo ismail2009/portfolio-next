@@ -88,9 +88,17 @@ export async function getExperience() {
   "use cache";
   cacheLife("max");
   const entries = await reader.collections.experience.all();
-  return entries
+  const sorted = entries
     .map(({ slug, entry }) => ({ slug, ...entry }))
     .sort((a, b) => (b.start ?? "").localeCompare(a.start ?? ""));
+  // Logos are wordmarks of different widths, so their size is read here for next/image.
+  return Promise.all(
+    sorted.map(async (entry) => {
+      if (!entry.logo) return { ...entry, logo: null };
+      const { width, height } = imageSize(await readFile(path.join(process.cwd(), "public", entry.logo)));
+      return { ...entry, logo: { src: entry.logo, width, height } };
+    }),
+  );
 }
 
 export type ExperienceEntry = Awaited<ReturnType<typeof getExperience>>[number];
