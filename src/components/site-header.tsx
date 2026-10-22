@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { getProfile, getSettings } from "@/lib/content";
 import { ExternalLink } from "./external-link";
 import { LanguageSwitch } from "./language-switch";
+import { MobileMenu } from "./mobile-menu";
 
 const sections = ["work", "experience", "services", "about", "contact"] as const;
 
@@ -39,8 +40,8 @@ export async function SiteHeader() {
           <span className="font-display text-lg font-semibold tracking-[-0.01em]">{t("brand")}</span>
         </Link>
 
-        {/* On phones the links drop to their own scrollable row under the brand. */}
-        <ul className="order-last -mx-6 flex w-[calc(100%+3rem)] gap-6 overflow-x-auto px-6 text-[15px] font-medium md:order-none md:mx-0 md:w-auto md:overflow-visible md:px-0">
+        {/* On phones these links move into the slide-in menu (MobileMenu). */}
+        <ul className="hidden gap-6 text-[15px] font-medium md:flex">
           {sections.map((section) => (
             <li key={section}>
               <Link
@@ -63,6 +64,7 @@ export async function SiteHeader() {
               {t("book")}
             </ExternalLink>
           )}
+          <MobileMenu sections={sections} bookUrl={settings.calendly ?? undefined} />
         </div>
       </nav>
     </header>

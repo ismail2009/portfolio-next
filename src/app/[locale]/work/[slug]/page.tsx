@@ -63,9 +63,15 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
           <ArrowForward size={16} className="rotate-180 rtl:rotate-0" />
           {t("back")}
         </Link>
-        <Eyebrow>
-          <span>{t("eyebrow", { title: project.title })}</span>
-        </Eyebrow>
+        {/* With screens to show, the logo is a small badge here and the screens carry the page. */}
+        <div className="flex items-center gap-4">
+          {project.screenshots.length > 0 && (
+            <LogoTile project={project} locale={locale} size="badge" priority />
+          )}
+          <Eyebrow>
+            <span>{t("eyebrow", { title: project.title })}</span>
+          </Eyebrow>
+        </div>
         <LocalizedText
           as="h1"
           value={project.outcome}
@@ -97,18 +103,26 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
         </div>
       </header>
 
-      <div className="mx-auto max-w-page px-6 pb-24">
-        <div className="flex min-h-80 items-center justify-center rounded-[28px] bg-sunken p-12 md:min-h-[420px]">
-          <LogoTile project={project} locale={locale} size="hero" priority />
+      {project.screenshots.length === 0 && (
+        <div className="mx-auto max-w-page px-6 pb-24">
+          <div className="flex min-h-80 items-center justify-center rounded-[28px] bg-sunken p-12 md:min-h-[420px]">
+            <LogoTile project={project} locale={locale} size="hero" priority />
+          </div>
         </div>
-      </div>
+      )}
 
       {project.screenshots.length > 0 && (
         <section aria-labelledby="case-screens" className="mx-auto flex max-w-page flex-col gap-6 px-6 pb-24">
           <h2 id="case-screens" className="m-0 font-display text-[32px] font-extrabold tracking-[-0.025em]">
             {t("screens")}
           </h2>
-          <ScreenStrip project={project} locale={locale} labelledBy="case-screens" />
+          <ScreenStrip
+            project={project}
+            locale={locale}
+            labelledBy="case-screens"
+            prevLabel={t("screensPrev")}
+            nextLabel={t("screensNext")}
+          />
         </section>
       )}
 

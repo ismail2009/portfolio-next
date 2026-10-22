@@ -19,7 +19,9 @@
     "contact": "تواصل",
     "book": "احجز مكالمة",
     "switchLanguage": "EN",
-    "switchLanguageLabel": "التبديل إلى الإنجليزية"
+    "switchLanguageLabel": "التبديل إلى الإنجليزية",
+    "menuOpen": "افتح القائمة",
+    "menuClose": "أغلق القائمة"
   },
   "Hero": {
     "ctaWork": "تصفّح أعمالي",
@@ -136,7 +138,9 @@
     "ctaBody": "نصف ساعة تكفي لنحدد معًا نطاق تطبيقك، ويب كان أو موبايل.",
     "ctaButton": "احجز مكالمة 30 دقيقة",
     "more": "أعمال أخرى",
-    "metaTitle": "{title} — دراسة حالة · إسماعيل الصالح"
+    "metaTitle": "{title} — دراسة حالة · إسماعيل الصالح",
+    "screensPrev": "الشاشات السابقة",
+    "screensNext": "الشاشات التالية"
   },
   "NotFound": {
     "metaTitle": "الصفحة غير موجودة · إسماعيل الصالح",

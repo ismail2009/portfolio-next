@@ -289,7 +289,6 @@ export default config({
           description:
             "Paste the Google Drive share link (shared as 'Anyone with the link'). The site turns it into a direct download.",
         }),
-        cvPreviewUrl: fields.url({ label: "CV preview link" }),
       },
     }),
   },

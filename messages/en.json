@@ -19,7 +19,9 @@
     "contact": "Contact",
     "book": "Book a call",
     "switchLanguage": "عربي",
-    "switchLanguageLabel": "Switch to Arabic"
+    "switchLanguageLabel": "Switch to Arabic",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
   },
   "Hero": {
     "ctaWork": "View selected work",
@@ -136,7 +138,9 @@
     "ctaBody": "A 30-minute call is enough to scope a web or store app.",
     "ctaButton": "Book a 30-min call",
     "more": "More selected work",
-    "metaTitle": "{title} — Case study · Ismail Al-Saleh"
+    "metaTitle": "{title} — Case study · Ismail Al-Saleh",
+    "screensPrev": "Previous screens",
+    "screensNext": "Next screens"
   },
   "NotFound": {
     "metaTitle": "Page not found · Ismail Al-Saleh",

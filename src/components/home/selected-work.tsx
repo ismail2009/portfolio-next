@@ -68,9 +68,15 @@ export async function SelectedWork() {
   );
 }
 
+// The whole card opens the case: the "Read the case" link stretches over it with ::after, so it
+// stays one real link for keyboards and screen readers. Store links sit above it and keep their own targets.
+const cardClass =
+  "group relative isolate overflow-hidden rounded-card border border-line bg-surface transition-[border-color,box-shadow] hover:border-line-strong hover:shadow-[0_24px_48px_-32px_rgba(17,19,24,0.35)] has-[a:focus-visible]:border-accent";
+const stretchedLink = "after:absolute after:inset-0 after:content-['']";
+
 function FeaturedCase({ project, locale, readCase }: { project: Project; locale: string; readCase: string }) {
   return (
-    <article className="flex flex-wrap overflow-hidden rounded-card border border-line bg-surface">
+    <article className={`flex flex-wrap ${cardClass}`}>
       <div className="relative flex min-h-80 min-w-0 flex-[999_1_520px] items-center justify-center bg-sunken p-10 md:min-h-105">
         <ScreenFan project={project} locale={locale} variant="featured" priority />
       </div>
@@ -96,12 +102,14 @@ function FeaturedCase({ project, locale, readCase }: { project: Project; locale:
         <div className="mt-auto flex flex-wrap gap-3 pt-2">
           <Link
             href={`/work/${project.slug}`}
-            className="flex h-12 items-center rounded-xl bg-ink px-5 text-[15px] font-semibold text-white hover:bg-accent"
+            className={`flex h-12 items-center rounded-xl bg-ink px-5 text-[15px] font-semibold text-white group-hover:bg-accent ${stretchedLink}`}
           >
             {readCase}
             <span className="sr-only">: {project.title}</span>
           </Link>
-          <StoreLinks project={project} locale={locale} />
+          <div className="relative z-10 flex flex-wrap gap-3">
+            <StoreLinks project={project} locale={locale} />
+          </div>
         </div>
       </div>
     </article>
@@ -110,7 +118,7 @@ function FeaturedCase({ project, locale, readCase }: { project: Project; locale:
 
 function CaseCard({ project, locale, readCase }: { project: Project; locale: string; readCase: string }) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-card border border-line bg-surface">
+    <article className={`flex flex-col ${cardClass}`}>
       <div className="relative flex h-64 items-center justify-center bg-sunken">
         <ScreenFan project={project} locale={locale} variant="card" />
       </div>
@@ -126,12 +134,14 @@ function CaseCard({ project, locale, readCase }: { project: Project; locale: str
         <div className="mt-auto flex flex-wrap gap-x-2 pt-2">
           <Link
             href={`/work/${project.slug}`}
-            className="inline-flex h-12 items-center px-2 text-[15px] font-semibold underline underline-offset-4 hover:text-accent"
+            className={`inline-flex h-12 items-center px-2 text-[15px] font-semibold underline underline-offset-4 group-hover:text-accent ${stretchedLink}`}
           >
             {readCase}
             <span className="sr-only">: {project.title}</span>
           </Link>
-          <StoreLinks project={project} locale={locale} />
+          <div className="relative z-10 flex flex-wrap gap-x-2">
+            <StoreLinks project={project} locale={locale} />
+          </div>
         </div>
       </div>
     </article>

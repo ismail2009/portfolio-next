@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowOut } from "@/components/icons";
 import { ExternalLink } from "@/components/external-link";
+import { ScrollStrip } from "@/components/scroll-strip";
 import { LocalizedText } from "@/components/localized-text";
 import { localize, type Project } from "@/lib/content";
 
@@ -29,6 +30,7 @@ const tileSizes = {
   hero: { box: "size-52 md:size-72 rounded-[32px] p-7", sizes: "288px" },
   large: { box: "size-44 md:size-60 rounded-[28px] p-6", sizes: "240px" },
   small: { box: "size-32 rounded-[22px] p-4", sizes: "128px" },
+  badge: { box: "size-16 shrink-0 rounded-2xl p-2.5", sizes: "64px" },
 };
 
 /** Project images are logos and app icons, so they sit at a fixed size on a white tile. */
@@ -136,18 +138,17 @@ export function ScreenStrip({
   project,
   locale,
   labelledBy,
+  prevLabel,
+  nextLabel,
 }: {
   project: Project;
   locale: string;
   labelledBy: string;
+  prevLabel: string;
+  nextLabel: string;
 }) {
   return (
-    <div
-      role="region"
-      aria-labelledby={labelledBy}
-      tabIndex={0}
-      className="-mx-6 snap-x snap-mandatory scroll-px-6 overflow-x-auto px-6 pb-4 focus-visible:outline-2 focus-visible:outline-accent"
-    >
+    <ScrollStrip labelledBy={labelledBy} prevLabel={prevLabel} nextLabel={nextLabel}>
       <ul className="m-0 flex w-max list-none gap-4 p-0 md:gap-5">
         {project.screenshots.map((screen) => (
           <li key={screen.image} className="w-50 shrink-0 snap-start md:w-62.5">
@@ -162,7 +163,7 @@ export function ScreenStrip({
           </li>
         ))}
       </ul>
-    </div>
+    </ScrollStrip>
   );
 }
 

@@ -187,7 +187,6 @@ async function importSettings(config) {
     whatsapp: contact.whatsapp ?? current.whatsapp ?? "",
     calendly: contact.calendly ?? current.calendly ?? "",
     cvUrl: about.cvUrl ?? current.cvUrl ?? "",
-    cvPreviewUrl: about.cvPreviewUrl ?? current.cvPreviewUrl ?? "",
   };
   // Settings are merged rather than skipped: Firestore wins for contact and CV fields.
   await mkdir(dirname(path), { recursive: true });
