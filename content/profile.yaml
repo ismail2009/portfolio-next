@@ -170,15 +170,6 @@ education:
   graduation: '2026'
 training:
   - title:
-      en: Full-Time Training Program on Full-Stack JavaScript Web Development
-      ar: برنامج تدريبي بدوام كامل في تطوير الويب Full-Stack بـ JavaScript
-    organization:
-      en: Gaza Sky Geeks · Founders and Coders, London
-      ar: Gaza Sky Geeks · Founders and Coders، لندن
-    dates:
-      en: Nov 2017 – Apr 2018
-      ar: تشرين الثاني 2017 – نيسان 2018
-  - title:
       en: Freelance and Social Media Marketing
       ar: العمل الحر والتسويق عبر وسائل التواصل الاجتماعي
     organization:
@@ -188,11 +179,20 @@ training:
       en: May 2018 – Jul 2018
       ar: أيار 2018 – تموز 2018
   - title:
-      en: Competency-Based Training on Web Applications Development
-      ar: تدريب قائم على الكفاءات في تطوير تطبيقات الويب
+      en: Full-Time Training Program on Full-Stack JavaScript Web Development
+      ar: برنامج تدريبي بدوام كامل في تطوير الويب Full-Stack بـ JavaScript
     organization:
-      en: Center of Competence in IT Sector, Gaza
-      ar: مركز الكفاءات في قطاع تكنولوجيا المعلومات، غزة
+      en: Gaza Sky Geeks · Founders and Coders, London
+      ar: Gaza Sky Geeks · Founders and Coders، لندن
+    dates:
+      en: Nov 2017 – Apr 2018
+      ar: تشرين الثاني 2017 – نيسان 2018
+  - title:
+      en: "Web Applications Development (90 hours): HTML, CSS, JavaScript/jQuery and ASP.NET MVC with C#"
+      ar: "تطوير تطبيقات الويب (90 ساعة): HTML و CSS و JavaScript/jQuery و ASP.NET MVC بلغة C#‎"
+    organization:
+      en: Center of Competence in IT Sector with Islamic Relief, Gaza
+      ar: مركز الكفاءات في قطاع تكنولوجيا المعلومات بالتعاون مع الإغاثة الإسلامية، غزة
     dates:
       en: Nov 2016 – Dec 2016
       ar: تشرين الثاني 2016 – كانون الأول 2016

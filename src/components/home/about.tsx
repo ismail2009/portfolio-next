@@ -61,6 +61,44 @@ export async function About() {
                 </span>
               )}
             </p>
+
+            {profile.training.length > 0 && (
+              <>
+                <p className="m-0 mt-5 font-mono text-[12.5px] tracking-[0.06em] text-muted uppercase rtl:font-sans">
+                  {t("training")}
+                </p>
+                <ul className="m-0 mt-1.5 flex list-none flex-col gap-2 p-0">
+                  {profile.training.map((item) => (
+                    // Each part is bidi-isolated in the page direction, so a Latin word at the end of one
+                    // part can't run into the next in Arabic. (A <bdi> would take its direction from its first
+                    // word, which flips parts that start in English.)
+                    <li key={item.title.en}>
+                      <LocalizedText
+                        value={item.title}
+                        locale={locale}
+                        className="font-semibold [unicode-bidi:isolate]"
+                      />
+                      {" · "}
+                      <LocalizedText
+                        value={item.organization}
+                        locale={locale}
+                        className="text-body [unicode-bidi:isolate]"
+                      />
+                      {item.dates.en && (
+                        <span className="text-muted">
+                          {" · "}
+                          <LocalizedText
+                            value={item.dates}
+                            locale={locale}
+                            className="whitespace-nowrap [unicode-bidi:isolate]"
+                          />
+                        </span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         </div>
 
