@@ -93,3 +93,7 @@ heroImage: /images/projects/casting-arabia/hero.webp
 heroImageAlt:
   en: Browsing open opportunities and shows as talent
   ar: تصفح الفرص والأعمال المتاحة كموهبة
+cardScreens:
+  - 6
+  - 1
+  - 3

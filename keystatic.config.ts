@@ -110,6 +110,12 @@ export default config({
             itemLabel: (props) => props.fields.alt.fields.en.value || "Screen",
           },
         ),
+        cardScreens: fields.array(fields.integer({ label: "Screen number", validation: { min: 1 } }), {
+          label: "Screens on the home page card",
+          description:
+            "Which app screens (1 = first) the Selected work card fans out, front one first. Empty uses the first ones.",
+          itemLabel: (props) => `Screen ${props.value ?? ""}`,
+        }),
         heroImage: fields.image({
           label: "Home page phone screen",
           description:
@@ -278,7 +284,11 @@ export default config({
         email: fields.text({ label: "Email", validation: { isRequired: true } }),
         whatsapp: fields.url({ label: "WhatsApp link" }),
         calendly: fields.url({ label: "Calendly link" }),
-        cvUrl: fields.url({ label: "CV download link" }),
+        cvUrl: fields.url({
+          label: "CV download link",
+          description:
+            "Paste the Google Drive share link (shared as 'Anyone with the link'). The site turns it into a direct download.",
+        }),
         cvPreviewUrl: fields.url({ label: "CV preview link" }),
       },
     }),

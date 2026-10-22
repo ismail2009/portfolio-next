@@ -72,3 +72,6 @@ heroImage: /images/projects/seetah/hero.webp
 heroImageAlt:
   en: Seetah home screen with the award guide banner and the About Award section
   ar: الشاشة الرئيسية في Seetah مع إعلان دليل الجائزة وقسم عن الجائزة
+cardScreens:
+  - 1
+  - 2

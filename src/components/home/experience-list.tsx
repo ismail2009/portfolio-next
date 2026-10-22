@@ -132,7 +132,16 @@ export async function ExperienceList() {
                         <div className="flex min-w-0 flex-[999_1_320px] flex-col gap-2.5">
                           {/* The company's own logo first; otherwise the icon of the app shipped there.
                               It sits on its own line so wide wordmarks never push the title around. */}
-                          {entry.logo ? (
+                          {entry.logo && entry.logo.width < entry.logo.height * 1.5 ? (
+                            // A square logo is an app-style icon, shown like the case study icons.
+                            <Image
+                              src={entry.logo.src}
+                              alt=""
+                              width={48}
+                              height={48}
+                              className="mb-1 size-12 rounded-xl bg-white object-contain p-1"
+                            />
+                          ) : entry.logo ? (
                             <span className="mb-1 flex h-12 items-center self-start rounded-xl bg-white px-3">
                               <Image
                                 src={entry.logo.src}

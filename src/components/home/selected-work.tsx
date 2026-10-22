@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { ArrowForward, ArrowOut } from "@/components/icons";
 import { ExternalLink } from "@/components/external-link";
 import { LocalizedText } from "@/components/localized-text";
-import { LogoTile, ProjectMeta, Stack, StoreLinks } from "@/components/project-parts";
+import { ProjectMeta, ScreenFan, Stack, StoreLinks } from "@/components/project-parts";
 import { Eyebrow, SectionTitle } from "@/components/section-heading";
 import { getProjects, localize, type Project } from "@/lib/content";
 
@@ -71,8 +71,8 @@ export async function SelectedWork() {
 function FeaturedCase({ project, locale, readCase }: { project: Project; locale: string; readCase: string }) {
   return (
     <article className="flex flex-wrap overflow-hidden rounded-card border border-line bg-surface">
-      <div className="flex min-h-70 min-w-0 flex-[999_1_520px] items-center justify-center bg-sunken p-10 md:min-h-105">
-        <LogoTile project={project} locale={locale} size="large" priority />
+      <div className="relative flex min-h-80 min-w-0 flex-[999_1_520px] items-center justify-center bg-sunken p-10 md:min-h-105">
+        <ScreenFan project={project} locale={locale} variant="featured" priority />
       </div>
       <div className="flex min-w-0 flex-[1_1_360px] flex-col gap-5 p-8 md:p-10">
         <ProjectMeta project={project} locale={locale} />
@@ -111,8 +111,8 @@ function FeaturedCase({ project, locale, readCase }: { project: Project; locale:
 function CaseCard({ project, locale, readCase }: { project: Project; locale: string; readCase: string }) {
   return (
     <article className="flex flex-col overflow-hidden rounded-card border border-line bg-surface">
-      <div className="flex h-55 items-center justify-center bg-sunken">
-        <LogoTile project={project} locale={locale} size="small" />
+      <div className="relative flex h-64 items-center justify-center bg-sunken">
+        <ScreenFan project={project} locale={locale} variant="card" />
       </div>
       <div className="flex grow flex-col gap-3.5 p-8">
         <ProjectMeta project={project} locale={locale} />

@@ -72,3 +72,6 @@ screenshots:
     alt:
       en: Create article form with title, categories, text and image upload
       ar: نموذج إنشاء مقالة مع العنوان والتصنيفات والنص ورفع صورة
+cardScreens:
+  - 2
+  - 3

@@ -37,7 +37,21 @@ export function renderedLang(value: Localized, locale: string) {
 export async function getSettings() {
   "use cache";
   cacheLife("max");
-  return reader.singletons.settings.readOrThrow();
+  const settings = await reader.singletons.settings.readOrThrow();
+  return { ...settings, cvUrl: settings.cvUrl ? downloadUrl(settings.cvUrl) : settings.cvUrl };
+}
+
+/**
+ * The CV buttons download the file, so a Google Drive share link pasted in Keystatic
+ * (".../file/d/<id>/view", "open?id=<id>") becomes Drive's direct download link, and a
+ * Google Doc is exported as PDF. Any other link is left as it is.
+ */
+export function downloadUrl(url: string) {
+  const doc = url.match(/docs\.google\.com\/document\/d\/([\w-]+)/);
+  if (doc) return `https://docs.google.com/document/d/${doc[1]}/export?format=pdf`;
+  if (!url.includes("drive.google.com")) return url;
+  const id = url.match(/\/file\/d\/([\w-]+)/)?.[1] ?? url.match(/[?&]id=([\w-]+)/)?.[1];
+  return id ? `https://drive.google.com/uc?export=download&id=${id}` : url;
 }
 
 export async function getProfile() {

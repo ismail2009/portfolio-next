@@ -86,3 +86,6 @@ heroImage: /images/projects/plutoo/hero.webp
 heroImageAlt:
   en: A class feed of announcements and posts for parents, with images, author and time
   ar: منشورات وإعلانات الصف لأولياء الأمور، مع الصور والكاتب والوقت
+cardScreens:
+  - 4
+  - 1

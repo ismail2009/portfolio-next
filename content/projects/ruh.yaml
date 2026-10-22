@@ -74,3 +74,6 @@ heroImage: /images/projects/ruh/hero.webp
 heroImageAlt:
   en: Mood check-in asking how you are feeling today, with a set of emotion faces
   ar: سؤال عن حالتك المزاجية اليوم مع مجموعة من الوجوه التعبيرية
+cardScreens:
+  - 2
+  - 3

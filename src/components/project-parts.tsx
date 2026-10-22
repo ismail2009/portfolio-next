@@ -62,6 +62,71 @@ export function LogoTile({
   );
 }
 
+// Where each screen sits in the fan: the first is in front, the others lean out behind it.
+const fanLayouts = {
+  featured: [
+    "left-1/2 top-10 z-10 w-[30%] -translate-x-1/2",
+    "left-[10%] top-20 w-[25%] -rotate-6",
+    "right-[10%] top-20 w-[25%] rotate-6",
+  ],
+  // Shifted toward the end so the logo badge in the start corner never covers a screen.
+  card: ["start-[26%] top-9 z-10 w-[34%] -rotate-[4deg]", "end-[7%] top-16 w-[34%] rotate-[5deg]"],
+};
+
+/**
+ * The visual half of a project card: real app screens fanned out and cropped by the card's
+ * bottom edge, with the logo as a small badge. Falls back to the logo tile without screens.
+ */
+export function ScreenFan({
+  project,
+  locale,
+  variant,
+  priority,
+}: {
+  project: Project;
+  locale: string;
+  variant: keyof typeof fanLayouts;
+  priority?: boolean;
+}) {
+  const layout = fanLayouts[variant];
+  const picked = project.cardScreens.length
+    ? project.cardScreens.map((number) => (number ? project.screenshots[number - 1] : undefined))
+    : project.screenshots;
+  const screens = picked.filter((screen) => screen !== undefined).slice(0, layout.length);
+  if (screens.length === 0) {
+    return (
+      <LogoTile
+        project={project}
+        locale={locale}
+        size={variant === "featured" ? "large" : "small"}
+        priority={priority}
+      />
+    );
+  }
+
+  return (
+    <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
+      {screens.map((screen, index) => (
+        <Image
+          key={screen.image}
+          src={screen.image}
+          alt=""
+          width={screen.width}
+          height={screen.height}
+          priority={priority && index === 0}
+          sizes={variant === "featured" ? "220px" : "160px"}
+          className={`absolute h-auto rounded-[18px] border border-line shadow-[0_24px_48px_-24px_rgba(17,19,24,0.5)] ${layout[index]}`}
+        />
+      ))}
+      {project.image && (
+        <span className="absolute start-5 top-5 z-20 flex size-14 items-center justify-center rounded-2xl bg-surface p-2 shadow-[0_12px_24px_-12px_rgba(17,19,24,0.4)]">
+          <Image src={project.image} alt="" width={40} height={40} className="size-10 object-contain" />
+        </span>
+      )}
+    </div>
+  );
+}
+
 /**
  * App screens in a strip that scrolls sideways (and follows the page direction in Arabic).
  * The strip is focusable so keyboard users can scroll it with the arrow keys.
