@@ -12,7 +12,7 @@ export async function SiteHeader() {
   const [settings, profile] = await Promise.all([getSettings(), getProfile()]);
 
   return (
-    <header className="sticky top-0 z-10 border-b border-line bg-ground/90 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-line bg-ground/90 backdrop-blur-md">
       <nav
         aria-label={t("label")}
         className="mx-auto flex max-w-page flex-wrap items-center justify-between gap-x-4 gap-y-1 px-6 py-3"

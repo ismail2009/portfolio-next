@@ -105,7 +105,8 @@ export function ScreenFan({
   }
 
   return (
-    <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
+    // `isolate` keeps the screens' z-index inside the card, so they never rise above the sticky header.
+    <div aria-hidden="true" className="absolute inset-0 isolate overflow-hidden">
       {screens.map((screen, index) => (
         <Image
           key={screen.image}
