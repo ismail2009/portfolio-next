@@ -15,22 +15,40 @@ const storage = useGitHub
 // admin only exists once GitHub login is connected; until then /keystatic and its API return 404.
 export const adminEnabled = process.env.NODE_ENV === "development" || useGitHub;
 
+// Every text field has a max length, sized to where it shows on the site, so a headline or label
+// can't grow past the lines its layout allows. Raise a limit here rather than squeezing the design.
+const upTo = (max: number, description?: string) =>
+  [description, `Up to ${max} characters.`].filter(Boolean).join(" ");
+
+const text = (label: string, max: number, options: { description?: string; required?: boolean } = {}) =>
+  fields.text({
+    label,
+    description: upTo(max, options.description),
+    validation: { isRequired: options.required ?? false, length: { max } },
+  });
+
 // English is required; Arabic falls back to English on /ar until it is filled in.
-const localized = (label: string, options: { multiline?: boolean; required?: boolean } = {}) =>
+const localized = (label: string, max: number, options: { multiline?: boolean; required?: boolean } = {}) =>
   fields.object(
     {
       en: fields.text({
         label: "English",
+        description: upTo(max),
         multiline: options.multiline,
-        validation: { isRequired: options.required ?? true },
+        validation: { isRequired: options.required ?? true, length: { max } },
       }),
-      ar: fields.text({ label: "Arabic", multiline: options.multiline }),
+      ar: fields.text({
+        label: "Arabic",
+        description: upTo(max),
+        multiline: options.multiline,
+        validation: { length: { max } },
+      }),
     },
     { label, layout: [6, 6] },
   );
 
-const localizedList = (label: string, itemLabel: string) =>
-  fields.array(localized(itemLabel), {
+const localizedList = (label: string, itemLabel: string, max: number) =>
+  fields.array(localized(itemLabel, max), {
     label,
     itemLabel: (props) => props.fields.en.value || itemLabel,
   });
@@ -52,7 +70,9 @@ export default config({
       format: { data: "yaml" },
       columns: ["title", "order"],
       schema: {
-        title: fields.slug({ name: { label: "Title" } }),
+        title: fields.slug({
+          name: { label: "Title", description: upTo(30), validation: { length: { max: 30 } } },
+        }),
         visible: fields.checkbox({ label: "Show on the site", defaultValue: true }),
         featured: fields.checkbox({
           label: "Featured",
@@ -67,23 +87,24 @@ export default config({
           description: "Lower numbers come first.",
           defaultValue: 100,
         }),
-        category: localized("Category", { required: false }),
-        year: fields.text({ label: "Year", description: "e.g. 2022 or 2022–2023" }),
-        client: fields.text({ label: "Client" }),
-        role: localized("My role", { required: false }),
-        engagement: localized("Engagement", { required: false }),
-        outcome: localized("Outcome (one sentence)", { multiline: true }),
-        problem: localized("The problem", { multiline: true, required: false }),
-        decisions: localizedList("Key decisions", "Decision"),
-        shipped: localizedList("What shipped", "Item"),
-        metric: localized("Proof (short)", { required: false }),
-        stack: fields.array(fields.text({ label: "Technology" }), {
+        category: localized("Category", 50, { required: false }),
+        year: text("Year", 12, { description: "e.g. 2022 or 2022–2023." }),
+        client: text("Client", 60),
+        role: localized("My role", 40, { required: false }),
+        engagement: localized("Engagement", 60, { required: false }),
+        // The case study page headline: 120 characters is about three lines at desktop width.
+        outcome: localized("Outcome (one sentence)", 120, { multiline: true }),
+        problem: localized("The problem", 280, { multiline: true, required: false }),
+        decisions: localizedList("Key decisions", "Decision", 160),
+        shipped: localizedList("What shipped", "Item", 90),
+        metric: localized("Proof (short)", 40, { required: false }),
+        stack: fields.array(text("Technology", 30), {
           label: "Stack",
           itemLabel: (props) => props.value,
         }),
         links: fields.array(
           fields.object({
-            label: localized("Label"),
+            label: localized("Label", 20),
             href: fields.url({ label: "URL", validation: { isRequired: true } }),
           }),
           { label: "Links", itemLabel: (props) => props.fields.label.fields.en.value || "Link" },
@@ -93,7 +114,7 @@ export default config({
           directory: "public/images/projects",
           publicPath: "/images/projects/",
         }),
-        imageAlt: localized("Screenshot description", { required: false }),
+        imageAlt: localized("Screenshot description", 120, { required: false }),
         screenshots: fields.array(
           fields.object({
             image: fields.image({
@@ -102,7 +123,7 @@ export default config({
               publicPath: "/images/projects/",
               validation: { isRequired: true },
             }),
-            alt: localized("Description"),
+            alt: localized("Description", 120),
           }),
           {
             label: "App screens",
@@ -123,7 +144,7 @@ export default config({
           directory: "public/images/projects",
           publicPath: "/images/projects/",
         }),
-        heroImageAlt: localized("Home page phone screen — description", { required: false }),
+        heroImageAlt: localized("Home page phone screen — description", 120, { required: false }),
       },
     }),
 
@@ -134,17 +155,16 @@ export default config({
       format: { data: "yaml" },
       columns: ["company", "start"],
       schema: {
-        company: fields.slug({ name: { label: "Company" } }),
-        companyAr: fields.text({
-          label: "Company (Arabic)",
-          description: "Leave empty to use the English name.",
+        company: fields.slug({
+          name: { label: "Company", description: upTo(40), validation: { length: { max: 40 } } },
         }),
-        role: localized("Role"),
-        type: localized("Type", { required: false }),
+        companyAr: text("Company (Arabic)", 40, { description: "Leave empty to use the English name." }),
+        role: localized("Role", 60),
+        type: localized("Type", 40, { required: false }),
         start: fields.date({ label: "Start", validation: { isRequired: true } }),
         end: fields.date({ label: "End", description: "Leave empty if this is your current role." }),
-        outcome: localized("What shipped", { multiline: true }),
-        tags: fields.array(fields.text({ label: "Tag" }), {
+        outcome: localized("What shipped", 500, { multiline: true }),
+        tags: fields.array(text("Tag", 30), {
           label: "Tags",
           itemLabel: (props) => props.value,
         }),
@@ -175,9 +195,11 @@ export default config({
       path: "content/testimonials/*",
       format: { data: "yaml" },
       schema: {
-        name: fields.slug({ name: { label: "Name" } }),
-        role: localized("Role"),
-        quote: localized("Quote", { multiline: true }),
+        name: fields.slug({
+          name: { label: "Name", description: upTo(40), validation: { length: { max: 40 } } },
+        }),
+        role: localized("Role", 60),
+        quote: localized("Quote", 300, { multiline: true }),
         link: fields.url({ label: "Link (e.g. LinkedIn recommendation)" }),
         avatar: fields.image({
           label: "Photo",
@@ -194,7 +216,9 @@ export default config({
       format: { data: "yaml" },
       columns: ["platform", "showPublicly"],
       schema: {
-        platform: fields.slug({ name: { label: "Platform" } }),
+        platform: fields.slug({
+          name: { label: "Platform", description: upTo(30), validation: { length: { max: 30 } } },
+        }),
         url: fields.url({ label: "URL", validation: { isRequired: true } }),
         showPublicly: fields.checkbox({ label: "Show on the site" }),
         order: fields.integer({ label: "Order", defaultValue: 100 }),
@@ -214,39 +238,39 @@ export default config({
           directory: "public/images/profile",
           publicPath: "/images/profile/",
         }),
-        heroTitle: localized("Hero headline"),
-        heroAccent: localized("Hero headline — highlighted ending"),
-        heroDescription: localized("Hero description", { multiline: true }),
+        heroTitle: localized("Hero headline", 60),
+        heroAccent: localized("Hero headline — highlighted ending", 30),
+        heroDescription: localized("Hero description", 220, { multiline: true }),
         shipLog: fields.array(
           fields.object({
-            when: fields.text({ label: "When", description: "e.g. 2025 or 2019–22" }),
-            what: localized("What"),
-            detail: localized("Detail"),
+            when: text("When", 10, { description: "e.g. 2025 or 2019–22." }),
+            what: localized("What", 40),
+            detail: localized("Detail", 70),
           }),
           {
             label: "Hero ship log",
             itemLabel: (props) => `${props.fields.when.value} ${props.fields.what.fields.en.value}`,
           },
         ),
-        shipLogSummary: localized("Hero ship log — last line"),
-        clients: fields.array(fields.text({ label: "Client" }), {
+        shipLogSummary: localized("Hero ship log — last line", 50),
+        clients: fields.array(text("Client", 30), {
           label: "Shipped for (client names)",
           itemLabel: (props) => props.value,
         }),
         metrics: fields.array(
-          fields.object({ value: fields.text({ label: "Value" }), label: localized("Label") }),
+          fields.object({ value: text("Value", 10), label: localized("Label", 40) }),
           { label: "Metrics", itemLabel: (props) => props.fields.value.value || "Metric" },
         ),
-        aboutTitle: localized("About headline"),
-        aboutBody: localized("About text", { multiline: true }),
-        tools: fields.array(fields.text({ label: "Tool" }), {
+        aboutTitle: localized("About headline", 80),
+        aboutBody: localized("About text", 600, { multiline: true }),
+        tools: fields.array(text("Tool", 25), {
           label: "Tools shown in About",
           itemLabel: (props) => props.value,
         }),
         skillGroups: fields.array(
           fields.object({
-            category: fields.text({ label: "Category" }),
-            tags: fields.array(fields.text({ label: "Skill" }), {
+            category: text("Category", 30),
+            tags: fields.array(text("Skill", 40), {
               label: "Skills",
               itemLabel: (props) => props.value,
             }),
@@ -255,17 +279,17 @@ export default config({
         ),
         education: fields.object(
           {
-            degree: localized("Degree"),
-            school: localized("School"),
-            graduation: fields.text({ label: "Graduation year" }),
+            degree: localized("Degree", 50),
+            school: localized("School", 50),
+            graduation: text("Graduation year", 10),
           },
           { label: "Education" },
         ),
         training: fields.array(
           fields.object({
-            title: localized("Program"),
-            organization: localized("Organization"),
-            dates: localized("Dates", { required: false }),
+            title: localized("Program", 110),
+            organization: localized("Organization", 90),
+            dates: localized("Dates", 40, { required: false }),
           }),
           {
             label: "Training programs",
@@ -280,8 +304,8 @@ export default config({
       path: "content/settings",
       format: { data: "yaml" },
       schema: {
-        availability: localized("Availability badge"),
-        email: fields.text({ label: "Email", validation: { isRequired: true } }),
+        availability: localized("Availability badge", 60),
+        email: text("Email", 100, { required: true }),
         whatsapp: fields.url({ label: "WhatsApp link" }),
         calendly: fields.url({ label: "Calendly link" }),
         cvUrl: fields.url({

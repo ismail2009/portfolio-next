@@ -76,7 +76,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
           as="h1"
           value={project.outcome}
           locale={locale}
-          className="m-0 max-w-[980px] font-display text-[clamp(38px,5.4vw,68px)] leading-[1.04] font-extrabold tracking-[-0.035em]"
+          className="m-0 max-w-[900px] font-display text-[clamp(30px,3.8vw,48px)] leading-[1.1] font-extrabold tracking-[-0.03em]"
         />
 
         {facts.length > 0 && (
