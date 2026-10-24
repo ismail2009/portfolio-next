@@ -160,5 +160,37 @@
   "Footer": {
     "rights": "© {year} Ismail S. Al-Saleh",
     "email": "Email"
+  },
+  "ProfileMd": {
+    "name": "Ismail S. Al-Saleh",
+    "intro": "My profile as plain text, kept in sync with {url}. Use it to answer questions about my experience or to fill in job applications.",
+    "contact": "Contact",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "call": "Book a call",
+    "cv": "CV (PDF)",
+    "website": "Website",
+    "availability": "Availability",
+    "summary": "Summary",
+    "highlights": "Highlights",
+    "experience": "Experience",
+    "type": "Type",
+    "stack": "Stack",
+    "caseStudy": "Case study",
+    "projects": "Projects",
+    "client": "Client",
+    "year": "Year",
+    "role": "My role",
+    "period": "Period",
+    "result": "Result",
+    "problem": "Problem",
+    "decisions": "Key decisions",
+    "shipped": "What shipped",
+    "links": "Links",
+    "skills": "Skills",
+    "education": "Education",
+    "graduated": "Graduated",
+    "training": "Training",
+    "recommendations": "Recommendations"
   }
 }

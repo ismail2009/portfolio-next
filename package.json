@@ -14,7 +14,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "check": "npm run lint && npm run typecheck && npm run format:check",
-    "import:firestore": "node scripts/import-firestore.mjs"
+    "import:firestore": "node scripts/import-firestore.mjs",
+    "profile": "node scripts/build-profile.mjs"
   },
   "dependencies": {
     "@keystatic/core": "^0.6.9",

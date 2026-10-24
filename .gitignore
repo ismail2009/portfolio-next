@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# private job-application details (npm run profile); never commit these
+/private/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

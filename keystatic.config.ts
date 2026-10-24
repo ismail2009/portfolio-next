@@ -257,10 +257,10 @@ export default config({
           label: "Shipped for (client names)",
           itemLabel: (props) => props.value,
         }),
-        metrics: fields.array(
-          fields.object({ value: text("Value", 10), label: localized("Label", 40) }),
-          { label: "Metrics", itemLabel: (props) => props.fields.value.value || "Metric" },
-        ),
+        metrics: fields.array(fields.object({ value: text("Value", 10), label: localized("Label", 40) }), {
+          label: "Metrics",
+          itemLabel: (props) => props.fields.value.value || "Metric",
+        }),
         aboutTitle: localized("About headline", 80),
         aboutBody: localized("About text", 600, { multiline: true }),
         tools: fields.array(text("Tool", 25), {
