@@ -77,3 +77,7 @@ heroImageAlt:
 cardScreens:
   - 2
   - 3
+banner: /images/projects/ruh/banner.webp
+bannerAlt:
+  en: "Ruh app screens: a guided contemplation session and the mood check-in"
+  ar: "شاشات تطبيق روح: جلسة تأمل موجّهة وسؤال الحالة المزاجية"

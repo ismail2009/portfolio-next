@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
@@ -102,6 +103,20 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
           <StoreLinks project={project} locale={locale} />
         </div>
       </header>
+
+      {project.banner && (
+        <div className="mx-auto max-w-page px-6 pb-16">
+          <Image
+            src={project.banner.image}
+            alt={localize(project.bannerAlt, locale)}
+            width={project.banner.width}
+            height={project.banner.height}
+            priority
+            sizes="(min-width: 1248px) 1152px, calc(100vw - 48px)"
+            className="h-auto w-full rounded-[28px]"
+          />
+        </div>
+      )}
 
       {project.screenshots.length === 0 && (
         <div className="mx-auto max-w-page px-6 pb-24">

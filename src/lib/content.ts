@@ -72,6 +72,7 @@ export async function getProjects() {
     visible.map(async (project) => ({
       ...project,
       screenshots: await Promise.all(project.screenshots.map(withSize)),
+      banner: project.banner ? await withSize({ image: project.banner }) : null,
     })),
   );
 }
