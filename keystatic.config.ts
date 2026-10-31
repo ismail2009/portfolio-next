@@ -145,6 +145,14 @@ export default config({
           publicPath: "/images/projects/",
         }),
         heroImageAlt: localized("Home page phone screen — description", 120, { required: false }),
+        banner: fields.image({
+          label: "Case study banner",
+          description:
+            "A wide image (about 2.2:1) shown under the case study header: the app's screens on its brand colours, with no text, since the page already has the title. Leave empty for none.",
+          directory: "public/images/projects",
+          publicPath: "/images/projects/",
+        }),
+        bannerAlt: localized("Case study banner — description", 120, { required: false }),
       },
     }),
 

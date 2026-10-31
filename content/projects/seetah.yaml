@@ -75,3 +75,7 @@ heroImageAlt:
 cardScreens:
   - 1
   - 2
+banner: /images/projects/seetah/banner.webp
+bannerAlt:
+  en: "Seetah app screens: award branches, the home screen and the About prize page"
+  ar: "شاشات تطبيق Seetah: فروع الجائزة والشاشة الرئيسية وصفحة عن الجائزة"

@@ -71,3 +71,7 @@ heroImageAlt:
 cardScreens:
   - 1
   - 2
+banner: /images/projects/zakkaha/banner.webp
+bannerAlt:
+  en: "Zakkaha app screens: daily habits, the home screen with levels and daily Quran reading"
+  ar: "شاشات تطبيق زكّاها: العادات اليومية والشاشة الرئيسية مع المستويات والورد اليومي"

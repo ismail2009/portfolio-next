@@ -97,3 +97,7 @@ cardScreens:
   - 6
   - 1
   - 3
+banner: /images/projects/casting-arabia/banner.webp
+bannerAlt:
+  en: "Casting Arabia app screens: opportunities, an opportunity's details and the user type choice"
+  ar: "شاشات تطبيق Casting Arabia: الفرص وتفاصيل فرصة واختيار نوع المستخدم"

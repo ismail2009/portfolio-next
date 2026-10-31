@@ -89,3 +89,7 @@ heroImageAlt:
 cardScreens:
   - 4
   - 1
+banner: /images/projects/plutoo/banner.webp
+bannerAlt:
+  en: "Plutoo app screens: the nursery's classes, the welcome screen and a class feed"
+  ar: "شاشات تطبيق Plutoo: صفوف الحضانة وشاشة الترحيب ومنشورات الصف"
