@@ -15,11 +15,11 @@ engagement:
   en: Contract · Nov 2021
   ar: عقد · تشرين الثاني 2021
 outcome:
-  en: Built the profile, leaderboard, sign-up and edit-profile screens of an Arabic daily-habits app, plus deep linking and background push notifications on iOS and Android. Released on Google Play.
-  ar: بنيت شاشات الملف الشخصي ولوحة المتصدرين والتسجيل وتعديل الملف في تطبيق عربي للعادات اليومية، مع الروابط العميقة والإشعارات الفورية حتى والتطبيق في الخلفية على iOS و Android. أُطلق على Google Play.
+  en: Built the account screens, deep links and background push notifications for an Arabic daily-habits app.
+  ar: بنيت شاشات الحساب والروابط العميقة والإشعارات في الخلفية لتطبيق عربي للعادات اليومية.
 problem:
-  en: Zakkaha helps people review themselves every day across religious, mental, physical and social habits, with prayer times, athkar and daily Quran reading. A partner developer needed help finishing the app's account, progress and notification features before launch.
-  ar: يساعد تطبيق زكّاها المستخدم على محاسبة نفسه يوميًا في الجوانب الدينية والعقلية والجسدية والاجتماعية، مع مواقيت الصلاة والأذكار والورد اليومي من القرآن. احتاج المطور الشريك إلى مساعدة في إنهاء ميزات الحساب والتقدم والإشعارات قبل الإطلاق.
+  en: Zakkaha helps people review their religious, mental, physical and social habits every day, with prayer times, athkar and daily Quran reading. A partner developer needed help finishing the account and notification features before launch.
+  ar: يساعد تطبيق زكّاها المستخدم على محاسبة نفسه يوميًا في الجوانب الدينية والعقلية والجسدية والاجتماعية، مع مواقيت الصلاة والأذكار والورد اليومي. احتاج المطور الشريك إلى مساعدة في إنهاء ميزات الحساب والإشعارات قبل الإطلاق.
 decisions: []
 shipped: []
 metric:
