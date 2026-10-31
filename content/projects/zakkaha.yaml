@@ -1,0 +1,73 @@
+title: Zakkaha
+visible: true
+featured: false
+caseStudy: true
+order: 17
+category:
+  en: React Native · iOS + Android
+  ar: React Native · iOS + Android
+year: "2021"
+client: Web Com Technology
+role:
+  en: React Native Developer
+  ar: مطور React Native
+engagement:
+  en: Contract · Nov 2021
+  ar: عقد · تشرين الثاني 2021
+outcome:
+  en: Built the profile, leaderboard, sign-up and edit-profile screens of an Arabic daily-habits app, plus deep linking and background push notifications on iOS and Android. Released on Google Play.
+  ar: بنيت شاشات الملف الشخصي ولوحة المتصدرين والتسجيل وتعديل الملف في تطبيق عربي للعادات اليومية، مع الروابط العميقة والإشعارات الفورية حتى والتطبيق في الخلفية على iOS و Android. أُطلق على Google Play.
+problem:
+  en: Zakkaha helps people review themselves every day across religious, mental, physical and social habits, with prayer times, athkar and daily Quran reading. A partner developer needed help finishing the app's account, progress and notification features before launch.
+  ar: يساعد تطبيق زكّاها المستخدم على محاسبة نفسه يوميًا في الجوانب الدينية والعقلية والجسدية والاجتماعية، مع مواقيت الصلاة والأذكار والورد اليومي من القرآن. احتاج المطور الشريك إلى مساعدة في إنهاء ميزات الحساب والتقدم والإشعارات قبل الإطلاق.
+decisions: []
+shipped: []
+metric:
+  en: Released on Google Play
+  ar: منشور على Google Play
+stack:
+  - React Native
+  - Redux
+  - React Navigation
+  - Firebase Cloud Messaging
+links: []
+image: /images/projects/zakkaha/image.png
+imageAlt:
+  en: Zakkaha logo
+  ar: شعار زكّاها
+screenshots:
+  - image: /images/projects/zakkaha/screens/1.webp
+    alt:
+      en: Zakkaha home screen with the three habit levels and a partner banner
+      ar: الشاشة الرئيسية في زكّاها مع المستويات الثلاثة وإعلان الشريك
+  - image: /images/projects/zakkaha/screens/2.webp
+    alt:
+      en: Daily progress with points, level and the list of today's habits to mark as done
+      ar: التقدم اليومي مع النقاط والمستوى وقائمة عادات اليوم لتحديدها كمنجزة
+  - image: /images/projects/zakkaha/screens/3.webp
+    alt:
+      en: Daily Quran reading with a prompt to confirm the day's portion
+      ar: الورد اليومي من القرآن مع سؤال لتأكيد إتمامه
+  - image: /images/projects/zakkaha/screens/4.webp
+    alt:
+      en: Statistics and results for each level across the four habit areas
+      ar: الإحصائيات والنتائج لكل مستوى في الجوانب الأربعة
+  - image: /images/projects/zakkaha/screens/5.webp
+    alt:
+      en: Evening athkar reminder asking whether to start now
+      ar: تذكير بأذكار المساء مع سؤال للبدء الآن
+  - image: /images/projects/zakkaha/screens/6.webp
+    alt:
+      en: Onboarding screen introducing the religious habits area
+      ar: شاشة تعريفية بالجانب الديني
+  - image: /images/projects/zakkaha/screens/7.webp
+    alt:
+      en: Edit profile screen with name, phone, email, country, job and interests
+      ar: شاشة تعديل الملف الشخصي مع الاسم والهاتف والبريد والدولة والعمل والاهتمامات
+heroImage: /images/projects/zakkaha/hero.webp
+heroImageAlt:
+  en: Zakkaha home screen with the three habit levels
+  ar: الشاشة الرئيسية في زكّاها مع المستويات الثلاثة
+cardScreens:
+  - 1
+  - 2
